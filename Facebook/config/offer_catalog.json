@@ -1,0 +1,102 @@
+{
+  "currency": "VND",
+  "collection": "Thu Đông 2026",
+  "product_line": "10PM Pijama",
+  "products": [
+    {
+      "id": "the-classic-set",
+      "name": "THE DAYBREAK SET",
+      "subtitle": "Pijama Phong Cách Châu Âu · Sọc Hồng Nắng Sớm",
+      "badge": "MỚI RA MẮT",
+      "color": "Sọc Hồng",
+      "element": "Hỏa",
+      "element_good_for": [
+        "Hỏa",
+        "Thổ"
+      ],
+      "energy_note": "Ấm áp, nhiệt huyết, dịu dàng nhưng tràn đầy sức sống — như nắng sớm mai tiếp thêm sinh khí.",
+      "fabric": "100% Sợi Tự Nhiên Cao Cấp (Natural Plant-Based Cotton-Modal Blend)",
+      "fabric_specs": "Định lượng 165 GSM · Dệt thoi vân chéo thoáng khí 4 mùa · Tiêu chuẩn OEKO-TEX Standard 100 an toàn cho da",
+      "design_highlights": "Họa tiết Sọc Hồng năng lượng Hỏa — ấm áp, dịu dàng, tràn đầy sinh khí như nắng sớm · Viền tương phản trắng tinh tế — dấu ấn tay nghề may chuẩn phong cách châu Âu · Phom dáng suông tự do — ôm đẹp mọi vóc dáng, thoải mái từ nhà ra phố",
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "price": 390000,
+      "original_price": 490000,
+      "discount": 20,
+      "tags": [
+        "Mới Ra Mắt",
+        "Classic",
+        "Sọc Hồng",
+        "European Style",
+        "Hành Hỏa"
+      ]
+    },
+    {
+      "id": "the-cafe-look",
+      "name": "THE STILLWATER SET",
+      "subtitle": "Pijama Thiết Kế Cổ V · Caro Navy Tĩnh Tại",
+      "badge": "BÁN CHẠY NHẤT",
+      "color": "Caro Navy",
+      "element": "Thủy",
+      "element_good_for": [
+        "Thủy",
+        "Mộc"
+      ],
+      "energy_note": "Tĩnh tại, sâu lắng, trí tuệ, an yên như mặt nước lặng — mang lại sự tập trung và thư thái.",
+      "fabric": "95% Modal Sợi Gỗ Tự Nhiên & 5% Spandex Cao Cấp",
+      "fabric_specs": "Định lượng 180 GSM · Xử lý vi sinh xoa mềm bề mặt · Cảm giác mướt mát, chống nhăn tự nhiên",
+      "design_highlights": "Họa tiết Caro Navy năng lượng Thủy — tĩnh tại, sâu lắng, mang lại cảm giác an yên như mặt nước lặng · Cổ V thanh lịch, viền tương phản nổi bật tôn dáng cổ và xương quai xanh · Dáng relaxed fit thoải mái — dễ dàng chuyển đổi từ phòng ngủ sang góc café sáng",
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "price": 550000,
+      "original_price": null,
+      "discount": 0,
+      "tags": [
+        "Bán Chạy",
+        "Caro Navy",
+        "Cổ V",
+        "Chất Liệu Cao Cấp",
+        "Hành Thủy"
+      ]
+    },
+    {
+      "id": "the-evening-edit",
+      "name": "THE HEARTH SET",
+      "subtitle": "Pijama Wide-Leg Cao Cấp · Sọc Nâu Vững Chãi",
+      "badge": "PHIÊN BẢN GIỚI HẠN",
+      "color": "Sọc Nâu",
+      "element": "Thổ",
+      "element_good_for": [
+        "Thổ",
+        "Kim"
+      ],
+      "energy_note": "Vững chãi, ấm áp, bền bỉ, cảm giác 'về nhà' như đất mẹ nuôi dưỡng tâm hồn.",
+      "fabric": "100% Tencel Lyocell Thượng Hạng Dáng Rủ",
+      "fabric_specs": "Định lượng 190 GSM · Dệt bóng mờ tone-on-tone sang trọng · Thấm hút gấp 1.5 lần cotton, mềm rũ tự nhiên",
+      "design_highlights": "Họa tiết Sọc Nâu năng lượng Thổ — vững chãi, ấm áp, mang lại cảm giác bình yên như trở về nhà · Chất vải Tencel thượng hạng — độ rủ thướt tha, mềm mướt và thoáng khí vượt trội · Dáng wide-leg sang trọng — khí chất đẳng cấp, hoàn hảo cho cả những bữa tiệc tối riêng tư",
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "price": 750000,
+      "original_price": null,
+      "discount": 0,
+      "tags": [
+        "Giới Hạn",
+        "Sọc Nâu",
+        "Wide-Leg",
+        "Chất Liệu Cao Cấp",
+        "Hành Thổ"
+      ]
+    }
+  ],
+  "customer_policies": {
+    "return_policy": "Đổi trả miễn phí trong 30 ngày kể từ ngày nhận hàng (sản phẩm còn nguyên tag, chưa qua sử dụng) qua bưu cục hoặc chuyển phát về kho Amber Riverside",
+    "hotline": "0981 753 082"
+  },
+  "last_synced_at": "2026-09-09T15:48:03.453Z"
+}

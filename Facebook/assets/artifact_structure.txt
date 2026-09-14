@@ -1,0 +1,43 @@
+Cấu trúc thư mục artifact bắt buộc cho MỖI content item (một bài đăng):
+
+/content/{YYYY-MM-DD}/{content_id}/
+├── brief.json                 # objective, audience, insight, single_message, hook, proof_source, cta, format, duration, visual_style, policy_risk
+├── script.md                  # kịch bản Reel (chỉ Reel)
+├── voiceover.txt              # lời thoại để TTS (chỉ Reel)
+├── storyboard.json            # scene_id, start_s, end_s, narration, on_screen_text, visual_prompt, camera_motion, asset_ref, transition
+├── caption.txt                # caption cho image/text hoặc carousel
+├── carousel_copy.json         # copy từng slide (chỉ carousel)
+├── visual_prompt.json         # prompt sinh ảnh/video cho từng scene/slide
+├── source_manifest.json       # nguồn gốc + license của mọi asset dùng trong bài
+├── image_1x1.png              # export 1:1 (nếu cần)
+├── image_4x5.png              # export feed/carousel 4:5
+├── reel_9x16.mp4              # export Reel 9:16 (master 1080x1920)
+├── subtitles.srt              # phụ đề Reel — bắt buộc nếu có Reel
+├── thumbnail.jpg              # thumbnail cho Reel
+├── qa_report.json             # kết quả QA — xem 05-qa-policy-compliance.md
+├── approval.json              # AUTO_APPROVED hoặc thông tin người duyệt + timestamp
+├── publish_request.json       # payload gửi lên Meta Graph API
+├── publish_receipt.json       # post_id, publish_at, status, request_id
+└── metrics.json               # snapshot đo lường theo mốc +1h/+24h/+72h/+7d
+
+Định dạng file chuẩn:
+
+| Artifact                        | Format chuẩn          |
+|----------------------------------|------------------------|
+| Brand rules                      | UTF-8 YAML             |
+| Runtime/state/API payload        | UTF-8 JSON             |
+| Script                           | UTF-8 Markdown         |
+| Caption                          | UTF-8 TXT              |
+| Structured storyboard            | JSON                   |
+| Image master                     | PNG; delivery JPG/PNG  |
+| Feed/carousel master             | 1080x1350, 4:5         |
+| Reel master                      | 1080x1920, 9:16        |
+| Video delivery                   | MP4/H.264 + AAC        |
+| Voice master                     | WAV                    |
+| Voice delivery                   | AAC/MP3                |
+| Subtitle                         | UTF-8 SRT              |
+| Tabular metrics                  | Parquet; CSV chỉ để export |
+| Raw API archive                  | NDJSON/JSON gzip       |
+| Provenance                       | source_manifest.json   |
+
+Không publish nếu bất kỳ file nào trong required_files (xem agent_config.template.json → content.artifact_contract) bị thiếu.

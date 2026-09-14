@@ -1,0 +1,25 @@
+{
+  "name": "facebook-brand-automation",
+  "version": "1.0.0",
+  "description": "Hệ thống tự động hóa nội dung và lịch đăng bài Facebook Page QuanNguyenS",
+  "main": "lib/facebook-api.js",
+  "scripts": {
+    "health": "node scripts/test_token.js",
+    "sync-products": "node scripts/sync_products.mjs",
+    "start-publishing": "node scripts/schedule_month.js",
+    "pause-publishing": "node scripts/pause_publishing.js",
+    "check-progress": "node scripts/check_progress.js",
+    "post-now": "node scripts/publish_now.js",
+    "set-token": "node scripts/set_token.js",
+    "test-ai-pipeline": "node scripts/test_ai_pipeline.js"
+  },
+  "keywords": [
+    "facebook",
+    "graph-api",
+    "automation",
+    "brand",
+    "pyjama"
+  ],
+  "author": "QuanNguyenS",
+  "license": "ISC"
+}

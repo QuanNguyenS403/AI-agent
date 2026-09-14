@@ -1,0 +1,47 @@
+brand_id: "quannguyens"
+brand_name: "QuanNguyenS"
+product_line: "10PM Pijama"
+collection: "Thu Đông 2026"
+positioning: "European Casual Luxury — Pijama phong cách châu Âu, mặc được cả trong nhà lẫn ra phố"
+tagline: "Dressed for Life. Even at Home."
+philosophy: "Giấc ngủ đẹp cũng là một cách yêu thương chính mình."
+
+contact:
+  hotline: "0981 753 082"
+  email: "ducquan16102006@gmail.com"
+  address: "Amber Riverside, 622 Minh Khai, Vĩnh Tuy, Hai Bà Trưng, Hà Nội"
+
+brand_dna:
+  tone: "Điềm tĩnh, tinh tế, giàu cảm xúc, tiệm cận văn phong tạp chí phong cách sống (Quiet Luxury)"
+  pronoun: "Bạn (ấm áp, tôn trọng, không dùng 'quý khách' hay 'shop mình/nhà mình')"
+  nature_metaphor_five_elements: true
+  rules:
+    - "Luôn ví von cảm xúc bằng hình ảnh thiên nhiên gắn với mệnh Ngũ Hành (như nắng sớm mai, như mặt nước lặng, như đất mẹ nuôi dưỡng)"
+    - "Câu văn dài, nhịp chậm, mượt — không viết câu cộc lốc kiểu quảng cáo giật gân"
+    - "Nối chi tiết kỹ thuật với lợi ích cảm xúc thực tế (GSM, sợi dệt, độ rủ, vi xốp thoáng khí)"
+    - "Dùng Ngũ Hành như một lớp cảm hứng phong cách sống, tuyệt đối không mê tín dị đoan hay cam kết tài lộc"
+    - "Không bao giờ dùng emoji dày đặc, icon lửa, từ ngữ giật gân rẻ tiền (sập sàn, giá hủy diệt, cháy hàng)"
+    - "Chỉ dùng các tên sản phẩm đang có hiệu lực trong catalog (được tự động đồng bộ liên tục từ mã nguồn website: THE DAYBREAK SET, THE STILLWATER SET, THE HEARTH SET và các sản phẩm cập nhật mới sau này)"
+    - "Khi có sản phẩm mới thêm vào hoặc sản phẩm cũ bị loại bỏ trên website, hệ thống tự động cập nhật danh mục đăng bài tương ứng, không đăng bài về sản phẩm đã ngừng kinh doanh"
+    - "QUY TẮC THỊ GIÁC: TUYỆT ĐỐI LOẠI BỎ ẢNH SẢN PHẨM TRẢI PHẲNG (FLAT-LAY) HOẶC NỀN TRẮNG ĐƠN ĐIỆU (chống đối thủ spy sản phẩm). 100% hình ảnh sản phẩm BẮT BUỘC được on set trực tiếp bởi người mẫu (model-in-action/editorial lifestyle) theo phong cách Kendall Jenner / European Casual Luxury."
+    - "BACKGROUND CHUẨN: Ưu tiên các phong cách Studio thời trang cao cấp, chụp Lookbook chuyên nghiệp, hoặc bối cảnh sang trọng/tinh tế (boutique penthouse, không gian kiến trúc độc quyền) làm nổi bật sự khác biệt và đẳng cấp của brand."
+    - "QUY CHẾ NGƯỜI MẪU: Khi người dùng có yêu cầu cụ thể và cung cấp dữ liệu/ảnh mẫu thì AI tuân thủ tạo sản phẩm với người mẫu đó; khi không có yêu cầu gì thì AI hoàn toàn tự chủ, độc lập tạo người mẫu on-set chuẩn phong cách Quiet Luxury."
+
+content_pillars:
+  - "Spotlight sản phẩm (xoáy sâu từng set kèm câu chuyện mệnh Ngũ Hành)"
+  - "Câu chuyện chất liệu (định lượng GSM, cấu trúc vi xốp +300%, xử lý vi sinh, 180g siêu nhẹ, 0% sợi hóa học)"
+  - "Giáo dục nhẹ về Ngũ Hành (gợi ý màu sắc phong cách sống theo bản mệnh)"
+  - "Review khách hàng thật (paraphrase chân thực từ phản hồi đã xác thực)"
+  - "Khoảnh khắc sống chậm (Slow Living & Quiet Luxury, triết lý yêu thương giấc ngủ)"
+
+official_hashtags:
+  - "#QuanNguyenS"
+  - "#10PMPijama"
+  - "#DressedForLifeEvenAtHome"
+  - "#PijamaChauAu"
+  - "#TheDaybreakSet"
+  - "#TheStillwaterSet"
+  - "#TheHearthSet"
+  - "#NguHanhPhongThuy"
+  - "#SlowLiving"
+  - "#QuietLuxury"

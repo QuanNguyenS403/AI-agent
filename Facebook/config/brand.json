@@ -1,0 +1,53 @@
+{
+  "brand_id": "quannguyens",
+  "brand_name": "QuanNguyenS",
+  "product_line": "10PM Pijama",
+  "palette": {
+    "burgundy": {
+      "hex": "#631521",
+      "role": "Màu chủ đạo thương hiệu — nền tối, text nhấn"
+    },
+    "gold": {
+      "hex": "#D4AF37",
+      "role": "Màu điểm nhấn cao cấp — nút CTA, viền, chi tiết vàng"
+    },
+    "ivory": {
+      "hex": "#FAF8F5",
+      "role": "Nền sáng chủ đạo"
+    },
+    "mocha": {
+      "hex": "#2C201A",
+      "role": "Nền tối phụ, text đậm"
+    },
+    "brand_sand": {
+      "hex": "#E8DFD5",
+      "role": "Viền, đường phân cách nhẹ"
+    }
+  },
+  "typography": {
+    "display": "Cormorant Garamond (serif, italic cho trích dẫn cảm xúc)",
+    "body": "Inter (sans-serif)"
+  },
+  "visual_style": {
+    "prohibited_formats": [
+      "flat-lay (ảnh trải phẳng sản phẩm)",
+      "plain product on white background (sản phẩm trơn nền trắng)",
+      "ghost mannequin (ma-nơ-canh tàng hình)"
+    ],
+    "model_requirement": "100% hình ảnh sản phẩm BẮT BUỘC được on set trực tiếp bởi người mẫu thực tế/AI editorial (model-in-action), thể hiện trọn vẹn phom dáng cử động, độ rủ của vải và thần thái Quiet Luxury / Kendall Jenner. Tuyệt đối không chụp phẳng để chống đối thủ spy sản phẩm. QUY CHẾ VẬN HÀNH NGƯỜI MẪU: Khi người dùng có yêu cầu cụ thể và cung cấp dữ liệu/ảnh mẫu thì áp dụng chính xác model đó (qua IP-Adapter/LoRA); khi không có yêu cầu cụ thể, AI agent tự chủ hoàn toàn độc lập tạo người mẫu on-set phù hợp với brand aesthetic.",
+    "on_set_contexts": [
+      "Chụp Studio thời trang chuyên nghiệp cao cấp (High-end Fashion Editorial Studio với ánh sáng nghệ thuật, tối giản)",
+      "Phong cách chụp Lookbook thời trang châu Âu sang trọng, làm nổi bật sự độc quyền và khác biệt của thương hiệu",
+      "Bối cảnh kiến trúc/nội thất xa hoa, tinh tế (Luxury minimalist penthouse, suite boutique châu Âu, sảnh chờ cao cấp)",
+      "Bối cảnh dạo phố sành điệu (Model-Off-Duty): bước ra từ sảnh tòa nhà, góc quán café sáng ven đường kèm blazer/cardigan khoác hờ",
+      "Không gian thư giãn hoàng hôn / 10PM ấm cúng bên ban công hoặc ly rượu vang"
+    ],
+    "lighting": "Ánh sáng tự nhiên ấm dịu (Golden Hour / Diffused Morning Light), không dùng đèn flash studio gắt",
+    "shot_types": [
+      "Full body candid (người mẫu di chuyển tự nhiên, chụp bắt khoảnh khắc)",
+      "Medium shot tôn dáng (thanh thoát vùng cổ V, ve áo notch collar, dáng quần wide-leg)",
+      "Macro detail crop on body (cận cảnh đường may viền piping, thớ vải khi đang mặc trên người mẫu)",
+      "Mirror selfie phong cách tự nhiên, chỉn chu"
+    ]
+  }
+}

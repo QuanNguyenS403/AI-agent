@@ -1,0 +1,67 @@
+# HỒ SƠ SỰ THẬT SẢN PHẨM & TỒN KHO XÁC NHẬN (PRODUCT TRUTH DOSSIER)
+# Thương hiệu: QuanNguyenS | Dòng sản phẩm: 10PM Pijama
+# Cập nhật: 09/09/2026
+# Trạng thái tổng thể: CONFIRMED_INVENTORY_LOCKED (Đã xác nhận tồn kho & chính sách bởi chủ brand)
+
+meta:
+  brand_name: "QuanNguyenS"
+  product_line: "10PM Pijama"
+  collection: "Thu Đông 2026"
+  is_locked: true
+  status: "CONFIRMED_INVENTORY_LOCKED"
+  guideline: "Chỉ duy nhất THE STILLWATER SET có sẵn hàng tại kho (50M, 50L). Hai mẫu còn lại (THE DAYBREAK SET và THE HEARTH SET) là hàng ĐẶT TRƯỚC (Pre-order) thời gian chuẩn bị 7-10 ngày làm việc."
+
+products:
+  - sku: "the-classic-set"
+    name: "THE DAYBREAK SET"
+    status: "PRE_ORDER"
+    role_in_funnel: "Mẫu thu hút khách lần đầu; phong cách buổi sáng & tự thưởng"
+    color: "Sọc Hồng, viền trắng tương phản"
+    collar_type: "Cổ bẻ notch collar chuẩn phong cách châu Âu"
+    pant_type: "Dáng suông tự do (relaxed fit)"
+    sizes: ["S", "M"]
+    price_repo: 390000
+    original_price_repo: 490000
+    preorder_status: "Bắt buộc thông báo Đặt trước 7–10 ngày làm việc"
+    fabric_claimed: "Cotton-Modal Blend dệt thoi tự nhiên"
+    specs_claimed: "165 GSM · Thoáng khí 4 mùa · Tiêu chuẩn an toàn da"
+    element_concept: "Hỏa (ấm áp, năng lượng ban mai) — Chỉ dùng như cảm hứng phong cách sống, không mê tín"
+
+  - sku: "the-cafe-look"
+    name: "THE STILLWATER SET"
+    status: "IN_STOCK"
+    role_in_funnel: "SẢN PHẨM CHỦ LỰC DUY NHẤT SẴN HÀNG (Flagship Hero Product)"
+    color: "Caro Navy"
+    collar_type: "Cổ V thanh lịch, tôn xương quai xanh"
+    pant_type: "Dáng suông vừa vặn (relaxed fit)"
+    sizes_confirmed: ["M", "L"]
+    inventory_available:
+      M: 50
+      L: 50
+    price_repo: 550000
+    effective_bank_transfer_price: 495000 # Giảm 10% chuyển khoản tại checkout
+    preorder_status: "CÓ SẴN TẠI KHO — Giao ngay toàn quốc"
+    fabric_claimed: "95% Modal Sợi Gỗ Tự Nhiên & 5% Spandex Co Giãn"
+    specs_claimed: "180 GSM · Xử lý vi sinh xoa mềm bề mặt · Mướt mát, chống nhăn tự nhiên"
+    element_concept: "Thủy (tĩnh tại, an yên như mặt nước lặng)"
+
+  - sku: "the-evening-edit"
+    name: "THE HEARTH SET"
+    status: "PRE_ORDER"
+    role_in_funnel: "Nâng giá trị hình ảnh (Brand Halo); quà tặng cao cấp & cảm giác thư thái buổi tối"
+    color: "Sọc Nâu mocha"
+    collar_type: "Cổ notch collar dáng rủ sang trọng"
+    pant_type: "Quần ống rộng Wide-Leg thượng hạng"
+    sizes: ["S", "M"]
+    price_repo: 750000
+    preorder_status: "Bắt buộc thông báo Đặt trước 7–10 ngày làm việc"
+    fabric_claimed: "100% Tencel Lyocell Dáng Rủ Quý Phái"
+    specs_claimed: "190 GSM · Dệt bóng mờ tone-on-tone sang trọng · Mềm rủ tự nhiên"
+    element_concept: "Thổ (vững chãi, ấm áp, cảm giác về nhà)"
+
+rules_for_content_and_service:
+  - "Tập trung 100% nội dung giới thiệu sản phẩm giao ngay vào THE STILLWATER SET (Size M và L)."
+  - "Với DAYBREAK và HEARTH: Mọi bài viết, tư vấn hoặc giỏ hàng BẮT BUỘC nêu rõ thời gian giao 7-10 ngày làm việc."
+  - "TUYỆT ĐỐI LOẠI BỎ lời hứa 'đổi size tận nhà'. Thay bằng: Đổi trả miễn phí 30 ngày cho sản phẩm nguyên tem mác chưa qua sử dụng qua bưu cục/chuyển phát."
+  - "TUYỆT ĐỐI KHÔNG CHI TIỀN CHO QUẢNG CÁO: ads.enabled = false, ngân sách = 0. Chủ brand tự quản lý quảng cáo. AI Agent tập trung 100% organic reach, social, SEO, CSKH."
+  - "100% hình ảnh sản phẩm phải có người mẫu on-set, cấm tuyệt đối ảnh flat-lay chụp phẳng."

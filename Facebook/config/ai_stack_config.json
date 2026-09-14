@@ -1,0 +1,77 @@
+{
+  "ai_stack_version": "1.0.0",
+  "brand": "QuanNguyenS",
+  "tools": {
+    "content_strategy": {
+      "type": "LLM",
+      "model": "claude-3-7-sonnet / gpt-4o / gemini-1.5-pro",
+      "role": "Hoạch định lịch trình nội dung theo 5 trụ cột thương hiệu và phong cách Kendall Jenner / Quiet Luxury",
+      "temperature": 0.7,
+      "max_tokens": 2048
+    },
+    "caption_writing": {
+      "type": "LLM",
+      "model": "claude-3-7-sonnet / gpt-4o / gemini-1.5-pro",
+      "role": "Viết caption phong cách sống tối giản, sâu lắng, chuẩn nhận diện 10PM Pijama, không dùng icon lửa hay từ ngữ giật gân",
+      "temperature": 0.65,
+      "max_tokens": 1024
+    },
+    "prompt_engineering": {
+      "type": "LLM",
+      "model": "claude-3-7-sonnet / gpt-4o / gemini-1.5-pro",
+      "role": "Chuyển hóa ý tưởng bài viết thành prompt nhiếp ảnh thời trang chi tiết cho FLUX/Qwen Image, bắt buộc người mẫu on-set, loại bỏ hoàn toàn flat-lay",
+      "temperature": 0.5,
+      "max_tokens": 1024
+    },
+    "image_generation": {
+      "primary_engine": "FLUX.1 [dev] / FLUX Schnell",
+      "secondary_engine": "Qwen-Image / Qwen2-VL",
+      "aspect_ratio": "4:5",
+      "resolution": "1080x1350",
+      "guidance_scale": 3.5,
+      "steps": 28,
+      "seed_policy": "consistent_model_seed",
+      "rules": [
+        "100% người mẫu on-set (không bao giờ chụp flat-lay)",
+        "Ánh sáng tự nhiên ấm dịu (Golden hour / Morning sunlight)",
+        "Bối cảnh căn hộ châu Âu tối giản hoặc dạo phố sành điệu",
+        "Bảng màu chuẩn: Burgundy, Gold, Ivory, Mocha, Sand"
+      ]
+    },
+    "image_editing": {
+      "engine": "FLUX Kontext (Inpainting & Contextual Editing)",
+      "capabilities": [
+        "Chỉnh sửa thớ vải và đường viền piping giấu mép",
+        "Tinh chỉnh nếp nhăn tự nhiên khi người mẫu cử động",
+        "Thay đổi góc bối cảnh từ phòng ngủ sang ban công/quán cà phê mà giữ nguyên nhận diện sản phẩm và người mẫu",
+        "Loại bỏ các dị vật hoặc chi tiết thừa trong hậu cảnh"
+      ]
+    },
+    "video_generation": {
+      "engine": "Image-to-Video (I2V) Workflow",
+      "supported_models": ["Wan2.1-I2V", "Kling AI", "Luma Dream Machine", "Runway Gen-3", "ComfyUI SVD"],
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "duration_seconds": 8,
+      "fps": 24,
+      "motion_profile": "Slow living / subtle cinematic motion",
+      "motion_types": [
+        "Tà quần wide-leg buông rủ bay nhẹ theo bước chân",
+        "Người mẫu nhấp ngụm cà phê, ánh mắt nhìn ra ban công đón nắng",
+        "Thao tác tay khẽ vuốt ve thớ vải Modal/Tencel mềm mượt"
+      ]
+    },
+    "quality_assurance": {
+      "engine": "Vision AI (Multimodal Vision LLM)",
+      "inspection_criteria": {
+        "face_integrity": "Đảm bảo ngũ quan người mẫu tự nhiên, không biến dạng, không mắt lé hay méo miệng",
+        "hands_and_limbs": "Kiểm tra bàn tay đủ 5 ngón, không dính ngón, không thừa chi",
+        "no_flat_lay": "Bắt buộc từ chối (REJECT) nếu phát hiện ảnh chụp phẳng hoặc sản phẩm trơn nền trắng",
+        "fabric_realism": "Thớ vải phải thể hiện độ rủ và bóng mờ tự nhiên của Modal/Tencel/Cotton",
+        "brand_palette_match": "Màu sắc ảnh phải hài hòa với bảng màu Burgundy, Gold, Ivory, Mocha, Sand",
+        "policy_compliance": "Không chứa hình ảnh hở hang phản cảm, tuân thủ tiêu chuẩn cộng đồng Meta"
+      },
+      "pass_threshold_score": 0.85
+    }
+  }
+}

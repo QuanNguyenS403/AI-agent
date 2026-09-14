@@ -1,0 +1,96 @@
+{
+  "description": "Danh mục tài sản hình ảnh người mẫu đã được thẩm định (Model-in-Action Asset Registry) cho QuanNguyenS. Tuyệt đối chỉ dùng ảnh người mẫu on-set, cấm toàn bộ ảnh flat-lay/nền trắng.",
+  "rules": {
+    "disallow_flat_lay": true,
+    "disallow_plain_white_background": true,
+    "disallow_ghost_mannequin": true,
+    "require_model_on_set": true,
+    "aesthetic_standard": "Kendall Jenner / Model-Off-Duty / Quiet Luxury",
+    "anti_spy_protection": "100% hình ảnh phải có người mẫu mặc, góc chụp 3/4 động lực học để chống đối thủ bóc rập sản phẩm."
+  },
+  "approved_model_assets": {
+    "the-classic-set": {
+      "sku": "the-classic-set",
+      "name": "THE DAYBREAK SET",
+      "color": "Sọc Hồng",
+      "assets": [
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-pink-thumb-1.jpg",
+          "shot_type": "Full-body candid",
+          "context": "Đứng bên kệ hoa tulip và tủ gỗ, tay nâng tách café sáng",
+          "aesthetic": "Morning light, European relaxed chic"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-pink-thumb-2.jpg",
+          "shot_type": "Medium shot on body",
+          "context": "Cận cảnh ve áo cổ bẻ notch collar và viền trắng tương phản trên cơ thể người mẫu",
+          "aesthetic": "Soft morning sunlight"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-pink-thumb-3.jpg",
+          "shot_type": "Lifestyle resting shot",
+          "context": "Người mẫu cử động thư giãn",
+          "aesthetic": "Quiet luxury living"
+        }
+      ]
+    },
+    "the-cafe-look": {
+      "sku": "the-cafe-look",
+      "name": "THE STILLWATER SET",
+      "color": "Caro Navy",
+      "assets": [
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-navy-thumb-1.jpg",
+          "shot_type": "Full-body candid",
+          "context": "Đứng cạnh bàn đầu giường và bình hoa trắng, thả lỏng tự nhiên, dép mule trắng",
+          "aesthetic": "Boutique bedroom, calm and peaceful"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-navy-thumb-2.jpg",
+          "shot_type": "Seated candid on bed",
+          "context": "Ngồi co chân trên nệm trắng, nụ cười nhẹ thư thái, thể hiện độ rủ Modal",
+          "aesthetic": "Intimate candid, after-work relaxation"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-navy-thumb-3.jpg",
+          "shot_type": "Model-off-duty standing",
+          "context": "Đứng tựa cửa trắng, hai tay cầm cốc sứ ấm, cổ V thanh thoát",
+          "aesthetic": "Kendall Jenner off-duty vibe"
+        }
+      ]
+    },
+    "the-evening-edit": {
+      "sku": "the-evening-edit",
+      "name": "THE HEARTH SET",
+      "color": "Sọc Nâu mocha",
+      "assets": [
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-brown-thumb-1.jpg",
+          "shot_type": "Full-body editorial",
+          "context": "Đứng tựa tường đút tay túi quần, ống Wide-Leg chạm gót, thần thái sang trọng",
+          "aesthetic": "High-fashion Quiet Luxury, rich earth tones"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-brown-thumb-2.jpg",
+          "shot_type": "Medium shot on body",
+          "context": "Góc nghiêng 3/4 thể hiện độ bóng mờ của Tencel 190 GSM",
+          "aesthetic": "Warm ambient lighting"
+        },
+        {
+          "path": "d:/Pijima/pijama/public/images/classic-set-brown-thumb-3.jpg",
+          "shot_type": "Lifestyle evening shot",
+          "context": "Thư giãn buổi tối bên sofa",
+          "aesthetic": "10PM evening unwind"
+        }
+      ]
+    }
+  },
+  "blacklisted_prohibited_assets": [
+    "d:/Pijima/pijama/public/images/classic-set-navy-main.jpg",
+    "d:/Pijima/pijama/public/images/classic-set-pink-main.jpg",
+    "d:/Pijima/pijama/public/images/classic-set-brown-main.jpg",
+    "d:/Pijima/pijama/public/images/classic-set-navy-main.png",
+    "d:/Pijima/pijama/public/images/classic-set-pink-main.png",
+    "d:/Pijima/pijama/public/images/classic-set-brown-main.png"
+  ]
+}

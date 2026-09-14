@@ -1,0 +1,313 @@
+{
+  "schema_version": "1.0.0",
+  "environment": "production",
+  "timezone": "Asia/Ho_Chi_Minh",
+
+  "brand": {
+    "brand_id": "REPLACE_ME",
+    "brand_name": "REPLACE_ME",
+    "market": "VN",
+    "language": "vi-VN",
+    "primary_goal": "qualified_leads",
+    "positioning_file": "config/brand_profile.yaml",
+    "offer_file": "config/offer_catalog.json",
+    "policy_file": "config/policy.yaml",
+    "image_brand_file": "config/brand.json",
+    "content_history_days": 60,
+    "optimization_window_days": 28
+  },
+
+  "meta": {
+    "graph_version": "v26.0",
+    "page_id": "REPLACE_PAGE_ID",
+    "ad_account_id": "act_REPLACE_AD_ACCOUNT_ID",
+    "pixel_id": "REPLACE_PIXEL_ID_OR_NULL",
+
+    "permissions": {
+      "organic": ["pages_show_list", "pages_read_engagement", "pages_manage_posts"],
+      "webhooks": ["pages_show_list", "pages_manage_metadata"],
+      "ads_reporting": ["ads_read"],
+      "ads_management": ["ads_management"]
+    },
+
+    "secrets": {
+      "page_access_token_ref": "secret://meta/page_access_token",
+      "app_secret_ref": "secret://meta/app_secret",
+      "system_user_token_ref": "secret://meta/system_user_token"
+    },
+
+    "security": {
+      "store_raw_tokens_in_config": false,
+      "store_raw_tokens_in_logs": false,
+      "use_appsecret_proof": true,
+      "verify_webhook_signature": true,
+      "webhook_signature_header": "X-Hub-Signature-256",
+      "token_health_check": true
+    },
+
+    "api": {
+      "base_url": "https://graph.facebook.com/v26.0",
+      "page_feed_endpoint": "/{page_id}/feed",
+      "reels_endpoint": "/{page_id}/video_reels",
+      "subscribed_apps_endpoint": "/{page_id}/subscribed_apps",
+      "debug_token_endpoint": "/debug_token",
+      "ads_insights_endpoint": "/{ad_account_id}/insights"
+    }
+  },
+
+  "agent_endpoints": {
+    "scheduler": "https://agent.example.com/jobs/scheduler",
+    "meta_page_webhook": "https://agent.example.com/webhooks/meta/page",
+    "approval_request": "https://agent.example.com/approval/request",
+    "approval_callback": "https://agent.example.com/approval/callback",
+    "alerts": "https://agent.example.com/alerts",
+    "health": "https://agent.example.com/health"
+  },
+
+  "content": {
+    "posts_per_week": 7,
+    "mix": { "reel": 4, "carousel": 2, "image_text": 1 },
+    "pillars_pct": {
+      "teach": 40,
+      "point_of_view": 20,
+      "proof_case": 15,
+      "personal_story": 15,
+      "offer_cta": 10
+    },
+    "voice": {
+      "tone": ["expert", "plainspoken", "direct", "credible"],
+      "one_core_idea_per_post": true,
+      "one_primary_cta": true,
+      "unsupported_superlatives": false,
+      "fabricated_testimonials": false,
+      "fabricated_statistics": false
+    },
+    "reel": {
+      "target_duration_seconds": { "min": 35, "max": 50 },
+      "master_width": 1080,
+      "master_height": 1920,
+      "aspect_ratio": "9:16",
+      "container": "mp4",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "subtitle_required": true,
+      "subtitle_format": "srt",
+      "script_template": {
+        "hook_seconds": "0-2",
+        "problem_seconds": "2-6",
+        "value_seconds": "6-25",
+        "proof_seconds": "25-38",
+        "cta_seconds": "38-50"
+      }
+    },
+    "feed": {
+      "master_width": 1080,
+      "master_height": 1350,
+      "aspect_ratio": "4:5",
+      "image_formats": ["png", "jpg"]
+    },
+    "image_pipeline": {
+      "brand_rules_file": "config/brand.json",
+      "background_removal_tool": "rembg",
+      "inpainting_tool": "lama",
+      "portrait_restoration_tool": "codeformer",
+      "upscale_tool": "real_esrgan",
+      "identity_conditioning_tool": "pulid_or_ip_adapter",
+      "multi_view_tool": "zero123plus",
+      "text_badge_overlay_tool": "imagemagick",
+      "text_generated_by_diffusion": false,
+      "portrait_identity_reject_on_excess_change": true,
+      "export_sizes": ["1080x1080", "1080x1350", "1080x1920"]
+    },
+    "artifact_contract": {
+      "required_files": [
+        "brief.json",
+        "caption.txt",
+        "source_manifest.json",
+        "qa_report.json",
+        "approval.json",
+        "publish_request.json"
+      ],
+      "reel_files": [
+        "script.md",
+        "storyboard.json",
+        "visual_prompt.json",
+        "reel_9x16.mp4",
+        "subtitles.srt",
+        "thumbnail.jpg"
+      ],
+      "carousel_files": ["carousel_copy.json", "visual_prompt.json"]
+    }
+  },
+
+  "schedule": {
+    "strategy_job": { "cron": "30 5 * * 1", "timezone": "Asia/Ho_Chi_Minh" },
+    "publish_slots": [
+      { "day": "MON", "time": "07:30", "format": "carousel", "pillar": "teach" },
+      { "day": "TUE", "time": "19:30", "format": "reel", "pillar": "point_of_view" },
+      { "day": "WED", "time": "11:45", "format": "image_text", "pillar": "point_of_view" },
+      { "day": "THU", "time": "19:30", "format": "reel", "pillar": "teach" },
+      { "day": "FRI", "time": "11:45", "format": "carousel", "pillar": "proof_case" },
+      { "day": "SAT", "time": "09:00", "format": "reel", "pillar": "personal_story" },
+      { "day": "SUN", "time": "20:00", "format": "reel", "pillar": "offer_cta" }
+    ],
+    "adaptive_after_days": 28,
+    "missed_slot_grace_minutes": 30,
+    "double_post_on_missed_slot": false
+  },
+
+  "audience": {
+    "segments": {
+      "cold": { "source": "broad_allowed_targeting" },
+      "warm": { "sources": ["page_engagement", "video_engagement"] },
+      "intent": { "sources": ["website", "lead_form", "booking_events"] },
+      "value": { "sources": ["qualified_leads", "customers", "high_ltv_customers"] }
+    },
+    "customer_data": {
+      "hash_identifiers_before_upload": true,
+      "require_lawful_data_source": true,
+      "retain_consent_provenance": true
+    },
+    "lookalike": {
+      "enabled": true,
+      "preferred_seed_priority": [
+        "high_ltv_customers",
+        "customers",
+        "qualified_leads",
+        "converters",
+        "high_intent_visitors",
+        "high_quality_engagers"
+      ],
+      "initial_similarity_pct": 1,
+      "expand_only_after_evaluation": true,
+      "block_special_category_when_not_supported": true
+    }
+  },
+
+  "ads": {
+    "enabled": false,
+    "deployment_requires_budget": true,
+    "objective": "OUTCOME_LEADS",
+    "budget": {
+      "currency": "VND",
+      "daily_budget": null,
+      "max_monthly_spend": null,
+      "allow_agent_to_increase_total_budget": false,
+      "allocation_pct": { "prospecting": 70, "retargeting": 20, "experiments": 10 }
+    },
+    "bidding": {
+      "initial_strategy": "LOWEST_COST_WITHOUT_CAP",
+      "target_cpa": null,
+      "allow_cost_cap_after_stable_data": true
+    },
+    "creative_testing": {
+      "concepts": 3,
+      "hooks_per_concept": 2,
+      "change_one_primary_variable": true,
+      "equal_initial_allocation": true,
+      "primary_metric": "qualified_lead",
+      "pause_zero_conversion_after_target_cpa_multiple": 1.5,
+      "require_minimum_evidence_before_winner": true
+    }
+  },
+
+  "measurement": {
+    "organic_snapshots_hours_after_publish": [1, 24, 72, 168],
+    "ads_pull_interval_hours": 3,
+    "daily_reconciliation": true,
+    "kpis": {
+      "business": ["qualified_leads", "booked_calls", "conversion_rate", "cac", "revenue", "roas"],
+      "paid": ["spend", "reach", "impressions", "frequency", "cpm", "link_ctr", "cpc", "cpl", "cpa"],
+      "content": ["supported_reach_or_view_metric", "interactions", "comments", "shares", "link_clicks", "video_watch_metrics"],
+      "automation": ["publish_success_rate", "duplicate_publish_count", "qa_failure_rate", "api_error_rate", "webhook_latency_seconds"]
+    }
+  },
+
+  "qa": {
+    "max_generation_repairs": 2,
+    "require_claim_sources": true,
+    "require_license_manifest": true,
+    "require_link_validation": true,
+    "require_pii_scan": true,
+    "require_secret_scan": true,
+    "require_policy_scan": true,
+    "require_duplicate_scan": true,
+    "require_ai_disclosure_check": true,
+    "auto_approval": { "enabled": true, "allowed_risk": "LOW" },
+    "human_approval_triggers": [
+      "MEDIUM_RISK",
+      "HIGH_RISK",
+      "health_claim",
+      "financial_claim",
+      "legal_claim",
+      "political_or_social_issue",
+      "public_figure",
+      "synthetic_likeness",
+      "synthetic_voice_without_verified_rights",
+      "copyright_uncertain"
+    ],
+    "hard_block": [
+      "fabricated_testimonial",
+      "fabricated_evidence",
+      "secret_leak",
+      "pii_violation",
+      "unlicensed_media",
+      "fake_engagement",
+      "impersonation",
+      "prohibited_targeting",
+      "policy_violation"
+    ]
+  },
+
+  "webhooks": {
+    "page": { "subscribed_fields": ["feed"], "verify_signature": true, "deduplicate": true },
+    "idempotency": { "enabled": true, "publish_key": "content_id:scheduled_at", "webhook_key": "event_id" }
+  },
+
+  "retry": {
+    "generation": { "max_attempts": 2, "fallback_to_static_creative": true },
+    "meta_api": {
+      "max_attempts": 5,
+      "strategy": "exponential_backoff_with_jitter",
+      "retry_429": true,
+      "retry_unknown_publish_without_reconciliation": false
+    },
+    "oauth_error": { "stop_publish": true, "trigger_token_health_check": true, "alert": true }
+  },
+
+  "fallback": {
+    "video_generation_failure": "STATIC_OR_CAROUSEL",
+    "voice_generation_failure": "TEXT_CAPTION_OR_ALTERNATE_TTS",
+    "qa_failure_after_repairs": "QUARANTINE",
+    "unknown_publish_state": "RECONCILE_BEFORE_RETRY",
+    "high_policy_risk": "HUMAN_APPROVAL",
+    "scheduler_late_beyond_grace": "MOVE_TO_NEXT_VALID_SLOT"
+  },
+
+  "storage": {
+    "artifact_root": "content/{yyyy-mm-dd}/{content_id}/",
+    "database": "postgresql",
+    "analytics_format": "parquet",
+    "raw_api_format": "ndjson_gzip",
+    "retain_source_provenance": true
+  },
+
+  "compliance": {
+    "meta_community_standards_required": true,
+    "meta_ad_standards_required": true,
+    "ai_media_disclosure_check": true,
+    "no_fake_engagement": true,
+    "no_impersonation": true,
+    "no_sensitive_attribute_inference": true,
+    "no_unsupported_claims": true,
+    "copyright_verification": true,
+    "customer_data_minimization": true
+  },
+
+  "slo": {
+    "publish_success_rate_min": 0.99,
+    "duplicate_publish_max": 0,
+    "secret_leak_max": 0,
+    "unapproved_high_risk_publish_max": 0
+  }
+}

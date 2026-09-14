@@ -1,0 +1,24 @@
+# Meta Compliance and Brand Quality Policy
+quality_gates:
+  min_brand_voice_score: 0.85
+  max_duplicate_score: 0.30
+  require_single_message: true
+  require_clear_cta: true
+
+creative_gates:
+  disallow_flat_lay: true
+  disallow_plain_white_background: true
+  require_model_on_set: true
+  model_aesthetic: "Kendall Jenner / Model-Off-Duty / Quiet Luxury"
+
+meta_policy_compliance:
+  allow_third_party_copyrighted_music: false
+  respect_community_standards: true
+  ai_disclosure_required: false
+  no_clickbait: true
+  no_misleading_claims: true
+
+scheduling_rules:
+  default_posting_time: "19:30"
+  min_interval_hours: 12
+  timezone: "Asia/Ho_Chi_Minh"
