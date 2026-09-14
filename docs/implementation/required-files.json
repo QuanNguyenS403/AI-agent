@@ -109,6 +109,7 @@
     "integrations/pijama/tree-manifest.json",
     "package.json",
     "reports/company-os-completion-2026-09-14.md",
+    "reports/verification-2026-09-14.json",
     "scripts/validate-repository.js",
     "tests/fixtures.js",
     "tests/policy.test.js",

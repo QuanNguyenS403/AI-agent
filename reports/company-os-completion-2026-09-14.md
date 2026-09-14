@@ -11,3 +11,7 @@ Source findings and unresolved Owner decisions remain in the audit and Decision 
 Checks to run/inspect for exact commit: npm run validate; npm test; npm run preview and GitHub Actions job logs. Validator includes only active Markdown link checking; quarantined legacy Markdown is preserved and excluded from normative link certification. Text secret scan is a limited detector, not exhaustive scanning of history/binary/customer systems.
 
 No changes to pijama and no remote publishing/Ads/customer/order/payment action. Source drift must be evaluated before future live integration.
+
+## Executed evidence
+
+[Node CI](https://github.com/QuanNguyenS403/AI-agent/actions/runs/34876627638) on 6dea8f087a4e8bfecad1f77a500dcc2471d2c9d0 passed all 94 tests (0 failed/skipped). Validator passed 112 required paths, 38 JSON files, 29 JS/MJS syntax files, 44 active Markdown files and 101 internal links. The preview remained SHADOW/BLOCKED. [Verification receipt](verification-2026-09-14.json) records scope and limitations; these results do not claim production readiness.

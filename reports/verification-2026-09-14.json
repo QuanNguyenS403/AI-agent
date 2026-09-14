@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "kind": "ACTUAL_CI_EXECUTION",
+  "repository": "QuanNguyenS403/AI-agent",
+  "tested_commit": "6dea8f087a4e8bfecad1f77a500dcc2471d2c9d0",
+  "workflow_run_id": 34876627638,
+  "job_id": 104085315167,
+  "url": "https://github.com/QuanNguyenS403/AI-agent/actions/runs/34876627638",
+  "conclusion": "success",
+  "node": "22.23.2",
+  "tests": {
+    "total": 94,
+    "passed": 94,
+    "failed": 0,
+    "skipped": 0
+  },
+  "validator": {
+    "required_files": 112,
+    "json_files": 38,
+    "js_syntax_files": 29,
+    "active_markdown_files": 44,
+    "active_local_links": 101,
+    "text_files_scanned": 124,
+    "errors": []
+  },
+  "preview": {
+    "status": "BLOCKED",
+    "mode": "SHADOW",
+    "external_effects": [],
+    "real_media_generated": false,
+    "qa_executed": false
+  },
+  "limits": [
+    "Evidence applies to exact tested commit; documentation updates may change inventory counts.",
+    "No Meta, bank, customer or commerce endpoint tested.",
+    "Git history and packaged binaries not certified clean.",
+    "No live authorization, production deployment or agent promotion."
+  ]
+}
