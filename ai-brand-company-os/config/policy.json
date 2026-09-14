@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "environment": "offline",
+  "allowed_actions": [
+    "source.inspect",
+    "draft.create",
+    "analysis.compute"
+  ],
+  "denied_external_actions": [
+    "publish",
+    "schedule",
+    "reply",
+    "crm.send",
+    "ads.create",
+    "ads.update",
+    "payment.change",
+    "order.change",
+    "refund",
+    "price.change",
+    "protected.write"
+  ],
+  "max_cost_vnd": 0,
+  "external_authorization": "NOT_IMPLEMENTED",
+  "rules": {
+    "unknown_action": "DENY",
+    "unknown_actor": "DENY",
+    "missing_or_invalid_work_order": "DENY",
+    "self_approval": "DENY",
+    "missing_evidence": "DENY",
+    "legacy_config": "QUARANTINE"
+  }
+}

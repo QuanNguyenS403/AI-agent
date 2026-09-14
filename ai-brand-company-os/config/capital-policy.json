@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "owner_approved": false,
+  "currency": "VND",
+  "thresholds": {
+    "min_settled_orders": null,
+    "min_observation_days": null,
+    "min_realized_profit_vnd": null,
+    "min_attribution_coverage": null,
+    "max_refund_rate": null,
+    "max_data_age_hours": null,
+    "reserve_requirement_vnd": null,
+    "max_reinvestment_fraction": null,
+    "max_test_budget_vnd": null
+  },
+  "note": "Null means undecided and FAIL. Diagnostic evaluation never issues spend authorization."
+}

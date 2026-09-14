@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # Chiến dịch 90 ngày — Ra mắt brand thời trang mới trên TikTok (Việt Nam)
 
 **Lập ngày:** 06/09/2026, dựa trên phân tích toàn văn báo cáo deep-research "AI marketing cho một brand thời trang mới" (chốt nghiên cứu 05/09/2026).

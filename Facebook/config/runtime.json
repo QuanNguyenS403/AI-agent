@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "mode": "OFFLINE_ONLY",
+  "dry_run": true,
+  "external_publishing": false,
+  "paid_acquisition": false,
+  "ads_budget_vnd": 0,
+  "graph_api": {
+    "version": "v25.0",
+    "verified_date": "2026-09-14",
+    "source": "https://developers.facebook.com/docs/graph-api/changelog/",
+    "live_capabilities_verified": false
+  },
+  "timezone": "Asia/Ho_Chi_Minh",
+  "default_caption_status": "DRAFT",
+  "max_draft_slots": 7,
+  "transport": "NOT_IMPLEMENTED"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "company_state": "BOOTSTRAP",
+  "default_autonomy": "A0",
+  "environment": "offline",
+  "dry_run": true,
+  "external_publishing": false,
+  "paid_acquisition": false,
+  "ads_budget_vnd": 0,
+  "capital_gate": "FAIL",
+  "kill_switches": {
+    "global_external": true,
+    "publishing": true,
+    "crm_send": true,
+    "paid_spend": true
+  },
+  "live_transport_implemented": false
+}

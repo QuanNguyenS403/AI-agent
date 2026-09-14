@@ -1,0 +1,542 @@
+{
+  "version": "1.0.0",
+  "environment": "offline",
+  "agents": [
+    {
+      "id": "governance",
+      "version": "1.0.0",
+      "manager": "Owner",
+      "purpose": "Policy and risk decisions",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "Owner",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "control",
+      "external_grant": null
+    },
+    {
+      "id": "ceo",
+      "version": "1.0.0",
+      "manager": "Owner",
+      "purpose": "Portfolio and work orders",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "control",
+      "external_grant": null
+    },
+    {
+      "id": "finance",
+      "version": "1.0.0",
+      "manager": "Owner",
+      "purpose": "Evidence-backed finance proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "finance",
+      "external_grant": null
+    },
+    {
+      "id": "market-research",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Public-source market insights",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "research",
+      "external_grant": null
+    },
+    {
+      "id": "customer-intelligence",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Minimized customer insights",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "research",
+      "external_grant": null
+    },
+    {
+      "id": "product",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Truth and catalog conflicts",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "product",
+      "external_grant": null
+    },
+    {
+      "id": "brand",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Brand contract",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "product",
+      "external_grant": null
+    },
+    {
+      "id": "creative",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Rights-aware media proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "creative",
+      "external_grant": null
+    },
+    {
+      "id": "content",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Grounded copy and scripts",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "creative",
+      "external_grant": null
+    },
+    {
+      "id": "seo",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Search and website proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "conversion",
+      "external_grant": null
+    },
+    {
+      "id": "social-media",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Channel schedules and reconciliation proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "channel",
+      "external_grant": null
+    },
+    {
+      "id": "community",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Community response drafts",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "channel",
+      "external_grant": null
+    },
+    {
+      "id": "crm",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Consented lifecycle proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "channel",
+      "external_grant": null
+    },
+    {
+      "id": "affiliate",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Partner and commission proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "finance",
+      "external_grant": null
+    },
+    {
+      "id": "conversion",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Commerce funnel improvement proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "conversion",
+      "external_grant": null
+    },
+    {
+      "id": "analytics",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Quality-aware metric proposals",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "data",
+      "external_grant": null
+    },
+    {
+      "id": "experimentation",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Preregistered tests and analysis",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "data",
+      "external_grant": null
+    },
+    {
+      "id": "customer-support",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Policy-grounded support drafts",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "channel",
+      "external_grant": null
+    },
+    {
+      "id": "quality-assurance",
+      "version": "1.0.0",
+      "manager": "governance",
+      "purpose": "Independent artifact review",
+      "enabled": true,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [
+        "source.inspect",
+        "draft.create",
+        "analysis.compute"
+      ],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "control",
+      "external_grant": null
+    },
+    {
+      "id": "paid-acquisition",
+      "version": "1.0.0",
+      "manager": "ceo",
+      "purpose": "Capital-gated paid test proposals",
+      "enabled": false,
+      "autonomy": "A0",
+      "risk_ceiling": "R1",
+      "allowed_actions": [],
+      "data_scopes": [
+        "public_source",
+        "redacted_artifact",
+        "synthetic_fixture"
+      ],
+      "input_contract": "work-order.schema.json",
+      "output_contract": "offline-artifact-v1",
+      "reviewer": "governance",
+      "max_cost_vnd": 0,
+      "max_concurrency": 1,
+      "timeout_seconds": 60,
+      "eval_profile": "finance",
+      "external_grant": null
+    }
+  ]
+}

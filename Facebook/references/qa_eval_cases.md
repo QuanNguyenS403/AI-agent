@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # BỘ 40 TÌNH HUỐNG NGHIỆM THU CHẤT LƯỢNG AI AGENT (EVALS MATRIX)
 # Áp dụng cho: Hệ thống Marketing Tự động QuanNguyenS
 # Cập nhật: 09/09/2026 | Theo tiêu chuẩn Mục 9 Tài liệu Định hướng

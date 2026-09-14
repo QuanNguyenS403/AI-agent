@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # BẢN ĐỒ CÂU HỎI KHÁCH HÀNG & MA TRẬN TÌNH HUỐNG MUA HÀNG
 # Thương hiệu: QuanNguyenS | Dòng sản phẩm: 10PM Pijama
 # Cập nhật: 09/09/2026 | Phiên bản: 1.0 (Thử nghiệm)

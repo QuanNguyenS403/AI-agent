@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # PROMPT THỰC THI — AI Agent vận hành marketing brand thời trang mới (TikTok-first, Việt Nam)
 
 > Dán toàn bộ nội dung dưới đây làm system prompt/operating instructions cho AI Agent (Claude, GPT, hoặc hệ thống agent nội bộ) sẽ hỗ trợ vận hành chiến dịch mô tả trong `chien-dich-90-ngay.md`. Prompt này bắt buộc đi kèm hồ sơ brand thật (mục 0 của bản chiến dịch) — không chạy prompt này khi hồ sơ còn trống.

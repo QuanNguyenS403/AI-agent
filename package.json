@@ -1,0 +1,15 @@
+{
+  "name": "ai-brand-company-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Governed offline bootstrap toolkit for QuanNguyenS",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-repository.js",
+    "test": "node --test tests/*.test.js Facebook/tests/*.test.js",
+    "preview": "node Facebook/scripts/test_ai_pipeline.js"
+  }
+}

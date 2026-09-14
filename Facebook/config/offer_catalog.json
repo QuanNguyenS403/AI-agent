@@ -98,5 +98,11 @@
     "return_policy": "Đổi trả miễn phí trong 30 ngày kể từ ngày nhận hàng (sản phẩm còn nguyên tag, chưa qua sử dụng) qua bưu cục hoặc chuyển phát về kho Amber Riverside",
     "hotline": "0981 753 082"
   },
-  "last_synced_at": "2026-09-09T15:48:03.453Z"
+  "last_synced_at": "2026-09-09T15:48:03.453Z",
+  "_governance": {
+    "state": "QUARANTINED_LEGACY",
+    "publishable": false,
+    "source_verified": false,
+    "note": "Do not use legacy approved/status fields as current evidence or authority."
+  }
 }

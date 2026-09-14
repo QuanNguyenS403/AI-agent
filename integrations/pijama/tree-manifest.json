@@ -1,0 +1,1444 @@
+{
+  "repository": "QuanNguyenS403/pijama",
+  "commit": "828409af7a26a2a5f4b4420789fc753588c9e1dc",
+  "truncated": false,
+  "entries": [
+    {
+      "path": ".env.example",
+      "type": "blob",
+      "sha": "97cffb67b1aa71dfa02c79b210f191a381961119",
+      "size": 2701
+    },
+    {
+      "path": ".github",
+      "type": "tree",
+      "sha": "9283aa7f3ff065f5e99b4f89667c24f3d9bfe02a"
+    },
+    {
+      "path": ".github/workflows",
+      "type": "tree",
+      "sha": "365793345bc221fe2525d1ec3414df7521324f3a"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "sha": "dd1700b6f62ca38dddcef5ad42afecf3b564962a",
+      "size": 1211
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "sha": "4dc2162966f0793b39ff0f8a85d8e6fc2b0ba06d",
+      "size": 165
+    },
+    {
+      "path": ".vscode",
+      "type": "tree",
+      "sha": "2b1fbb261a8117c61e05e45ec4a32077f9ffc308"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "type": "blob",
+      "sha": "1540bfb2a733273d7d81274a596f78c782eac93b",
+      "size": 122
+    },
+    {
+      "path": "PROTECTED-DATA.md",
+      "type": "blob",
+      "sha": "88dff26d6f1f5f210509260aa17407772c060210",
+      "size": 4362
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "sha": "07cfbc9d77a9d65e9b646bda86af21ad15ce3c90",
+      "size": 5133
+    },
+    {
+      "path": "customer-auth.env.example",
+      "type": "blob",
+      "sha": "a2d94d0a54dc8d0b8f9241b451b145b9ec34912d",
+      "size": 1389
+    },
+    {
+      "path": "docs",
+      "type": "tree",
+      "sha": "ddb94c9ade08b190c2a07c3d0073ad24e3d239c1"
+    },
+    {
+      "path": "docs/customer-auth-setup.md",
+      "type": "blob",
+      "sha": "d3aa1875264f7069feffefeaa1afbc232cae7380",
+      "size": 9853
+    },
+    {
+      "path": "ecosystem.config.cjs",
+      "type": "blob",
+      "sha": "bcebf487ae01e45dcc28a4eaabed7ff90c15c4e2",
+      "size": 373
+    },
+    {
+      "path": "index.html",
+      "type": "blob",
+      "sha": "870876c735232aec50e841fb5ddf4c2bbd71c82f",
+      "size": 4730
+    },
+    {
+      "path": "mo-web.bat",
+      "type": "blob",
+      "sha": "2a19d68e7474f845ecd77e4f5af3035379f3769e",
+      "size": 537
+    },
+    {
+      "path": "package-lock.json",
+      "type": "blob",
+      "sha": "0090a25c6fb85c778a6982cc341b0e2e3d1d257f",
+      "size": 113788
+    },
+    {
+      "path": "package.json",
+      "type": "blob",
+      "sha": "7e99d546c3da38c8a2acc6773866dd96f5c07eaf",
+      "size": 1376
+    },
+    {
+      "path": "postcss.config.js",
+      "type": "blob",
+      "sha": "2e7af2b7f1a6f391da1631d93968a9d487ba977d",
+      "size": 80
+    },
+    {
+      "path": "preview.bat",
+      "type": "blob",
+      "sha": "e0c703344218ec72329bb50bd1c32df41490eb26",
+      "size": 234
+    },
+    {
+      "path": "public",
+      "type": "tree",
+      "sha": "37f230b19b58fde78df444b5fd15d2ff953c1b36"
+    },
+    {
+      "path": "public/_redirects",
+      "type": "blob",
+      "sha": "ad37e2c2c9d586095623ec6b10e8eccbeb6e36d3",
+      "size": 24
+    },
+    {
+      "path": "public/favicon.svg",
+      "type": "blob",
+      "sha": "6cb2dfa6b15c2b520844ae882fb4c8a1798fc64a",
+      "size": 844
+    },
+    {
+      "path": "public/images",
+      "type": "tree",
+      "sha": "ff9cd1977c79704abbc38c889b10b823c90d198a"
+    },
+    {
+      "path": "public/images/classic-set-brown-detail.jpg",
+      "type": "blob",
+      "sha": "5bdd7ce97a2d6b2c08a0a3aa6bd5d9f4d02ef469",
+      "size": 358843
+    },
+    {
+      "path": "public/images/classic-set-brown-main.jpg",
+      "type": "blob",
+      "sha": "46759b8a4ff4e7f3a28814d751e722f3772f3215",
+      "size": 2282567
+    },
+    {
+      "path": "public/images/classic-set-brown-main.png",
+      "type": "blob",
+      "sha": "80b3d37802d013bd3edc428ddea1c0cd56ede9ef",
+      "size": 8202437
+    },
+    {
+      "path": "public/images/classic-set-brown-main.svg",
+      "type": "blob",
+      "sha": "1729218441a1a3d78e1674bc11c83bdfde5cf3fe",
+      "size": 11009293
+    },
+    {
+      "path": "public/images/classic-set-brown-thumb-1.jpg",
+      "type": "blob",
+      "sha": "167460fcd8a1f4cc3d2dfe0620aa1a0ecf886d49",
+      "size": 1745983
+    },
+    {
+      "path": "public/images/classic-set-brown-thumb-2.jpg",
+      "type": "blob",
+      "sha": "07407d6714100e87ed20dd022421f038c426abdd",
+      "size": 1999538
+    },
+    {
+      "path": "public/images/classic-set-brown-thumb-3.jpg",
+      "type": "blob",
+      "sha": "743ff9322c038137d1faeac3494e41e9ccf65153",
+      "size": 1784387
+    },
+    {
+      "path": "public/images/classic-set-navy-detail.jpg",
+      "type": "blob",
+      "sha": "62904aafa690e1ac3bd00f70c8b065e0a0f8a5d3",
+      "size": 722220
+    },
+    {
+      "path": "public/images/classic-set-navy-main.jpg",
+      "type": "blob",
+      "sha": "e92c9dacc23a5cd12057d72d79ec634a5420339f",
+      "size": 1051711
+    },
+    {
+      "path": "public/images/classic-set-navy-main.png",
+      "type": "blob",
+      "sha": "fd8d0a88a2bc02ca17e08b562d73dd8ac556f6a3",
+      "size": 7382791
+    },
+    {
+      "path": "public/images/classic-set-navy-main.svg",
+      "type": "blob",
+      "sha": "33da0bf3c726bfaaf9e80a0415fc75d8854712d5",
+      "size": 2196084
+    },
+    {
+      "path": "public/images/classic-set-navy-thumb-1.jpg",
+      "type": "blob",
+      "sha": "18693e9b9a8abc86a2e53e984c6893ab710249ed",
+      "size": 712810
+    },
+    {
+      "path": "public/images/classic-set-navy-thumb-2.jpg",
+      "type": "blob",
+      "sha": "74b7fa0e0fc41a5afa7b473244cadd8486f58055",
+      "size": 817652
+    },
+    {
+      "path": "public/images/classic-set-navy-thumb-3.jpg",
+      "type": "blob",
+      "sha": "9f470806781b1e4abef3c170bd0681fe6651965d",
+      "size": 689484
+    },
+    {
+      "path": "public/images/classic-set-pink-detail.jpg",
+      "type": "blob",
+      "sha": "80ac737f1bdafebeec4ea5efc14734ba4c11fc86",
+      "size": 744114
+    },
+    {
+      "path": "public/images/classic-set-pink-main.jpg",
+      "type": "blob",
+      "sha": "9da5ccb2efc2a66f7296c23fdf17aef3e81b5312",
+      "size": 875770
+    },
+    {
+      "path": "public/images/classic-set-pink-main.png",
+      "type": "blob",
+      "sha": "7c7fa8322447146ab976eac300ba38424dbc05b5",
+      "size": 6616720
+    },
+    {
+      "path": "public/images/classic-set-pink-main.svg",
+      "type": "blob",
+      "sha": "342c54421904d79e9b2eb3dca9904f5e978312df",
+      "size": 1750664
+    },
+    {
+      "path": "public/images/classic-set-pink-thumb-1.jpg",
+      "type": "blob",
+      "sha": "25318137476598612fc8befdb61f555927b8ae07",
+      "size": 880639
+    },
+    {
+      "path": "public/images/classic-set-pink-thumb-2.jpg",
+      "type": "blob",
+      "sha": "3f4f37ff5df9430eb8d43b07093e6caf2bb690fb",
+      "size": 815658
+    },
+    {
+      "path": "public/images/classic-set-pink-thumb-3.jpg",
+      "type": "blob",
+      "sha": "50c0f9e271b491263b8a231342499a242d621b0f",
+      "size": 598911
+    },
+    {
+      "path": "public/images/logo.jpg",
+      "type": "blob",
+      "sha": "28b42f842145c15e087eddcf7b833bf0591079ca",
+      "size": 509616
+    },
+    {
+      "path": "public/images/story-daybreak-material.jpg",
+      "type": "blob",
+      "sha": "c42947fb30969e8fd7c567cefa1706e070809fb4",
+      "size": 306943
+    },
+    {
+      "path": "public/images/story-hearth-material.jpg",
+      "type": "blob",
+      "sha": "691f998112fdf5fbeb491d27fea41d4d6a3f9176",
+      "size": 366893
+    },
+    {
+      "path": "public/images/story-stillwater-material.jpg",
+      "type": "blob",
+      "sha": "ad41a306028447cb8be4b91b1884e020c432fc56",
+      "size": 385321
+    },
+    {
+      "path": "public/logo.jpg",
+      "type": "blob",
+      "sha": "28b42f842145c15e087eddcf7b833bf0591079ca",
+      "size": 509616
+    },
+    {
+      "path": "public/robots.txt",
+      "type": "blob",
+      "sha": "8a28e9620de4c189215b8506792e4825718165f6",
+      "size": 87
+    },
+    {
+      "path": "public/sitemap.xml",
+      "type": "blob",
+      "sha": "de3a1c20b2b0bb7a01592d366b28073f4ad8fe47",
+      "size": 964
+    },
+    {
+      "path": "scripts",
+      "type": "tree",
+      "sha": "9fb44eec140f6baef9beef5652ffc8bb592137ef"
+    },
+    {
+      "path": "scripts/analyze_images.ps1",
+      "type": "blob",
+      "sha": "4120583411b0d8bdba5e3197b124fd1a55c8a19c",
+      "size": 1324
+    },
+    {
+      "path": "scripts/check_existing_mains.ps1",
+      "type": "blob",
+      "sha": "d118b36059719cf3987f0c9992c7e624f532e31e",
+      "size": 280
+    },
+    {
+      "path": "scripts/check_svg_detail.ps1",
+      "type": "blob",
+      "sha": "931aa365a66dbc34cc13899f04195468f2d30889",
+      "size": 1044
+    },
+    {
+      "path": "scripts/dev-full.js",
+      "type": "blob",
+      "sha": "5eb624a36db7610aadf693f25d4f0c50110077a4",
+      "size": 1342
+    },
+    {
+      "path": "scripts/dev-only",
+      "type": "tree",
+      "sha": "557fad41e74ca2be39b7231d6e799f4cf99fc42e"
+    },
+    {
+      "path": "scripts/dev-only/README.md",
+      "type": "blob",
+      "sha": "742ee98bbf971b4c7b4e31aaaa389d4e04bc0a2f",
+      "size": 457
+    },
+    {
+      "path": "scripts/dev-only/reset-orders.js",
+      "type": "blob",
+      "sha": "169b2e4ec56cdb742d265108cda4413d78055133",
+      "size": 8489
+    },
+    {
+      "path": "scripts/dev-only/test-database.js",
+      "type": "blob",
+      "sha": "bf39f2d210b29036521ffb196c3d9d6d645d19d1",
+      "size": 11218
+    },
+    {
+      "path": "scripts/extract_exact_mains.ps1",
+      "type": "blob",
+      "sha": "d34ab5c6a6dfde1b6f3fac46d0d982941f8743ff",
+      "size": 2036
+    },
+    {
+      "path": "scripts/extract_highest_res.ps1",
+      "type": "blob",
+      "sha": "7fb57bfd0612ba2173496b3f5890c155505db7f1",
+      "size": 1443
+    },
+    {
+      "path": "scripts/extract_pyjama_1_images.js",
+      "type": "blob",
+      "sha": "6f86be063a0dffef0b1fa75069feb924c208e00f",
+      "size": 849
+    },
+    {
+      "path": "scripts/extract_svg_images.js",
+      "type": "blob",
+      "sha": "85cd354c5c6b51e67b220276664ee90f01c1a2f9",
+      "size": 1073
+    },
+    {
+      "path": "scripts/extract_svg_images.ps1",
+      "type": "blob",
+      "sha": "8ba48d386835a5afb751621cce9b4f7165d7a0d2",
+      "size": 1017
+    },
+    {
+      "path": "scripts/extract_svg_with_mask.ps1",
+      "type": "blob",
+      "sha": "e096d6061c43e597e23f1e2f63fcb6de055ff04c",
+      "size": 7476
+    },
+    {
+      "path": "scripts/find_bounds.ps1",
+      "type": "blob",
+      "sha": "1669406daa458b26d0f57dafe1f941050cf7c9e6",
+      "size": 1121
+    },
+    {
+      "path": "scripts/fix_pink_main.ps1",
+      "type": "blob",
+      "sha": "7a7b5a8a8bd21dd4d968c1e2348bfbabe74fc0c4",
+      "size": 4122
+    },
+    {
+      "path": "scripts/inspect_and_process_pyjama_1.ps1",
+      "type": "blob",
+      "sha": "d521f5db53ebc2333a09a9027dfc8b723d1e41ed",
+      "size": 545
+    },
+    {
+      "path": "scripts/inspect_pink_svg.ps1",
+      "type": "blob",
+      "sha": "dd55ec10a70ca2c75d0515e66589ebafe6c4d145",
+      "size": 364
+    },
+    {
+      "path": "scripts/inspect_pixels.ps1",
+      "type": "blob",
+      "sha": "1fdf304dad69a213b46d0ec5cf4be6985bfc44d6",
+      "size": 965
+    },
+    {
+      "path": "scripts/inspect_pyjama_1.js",
+      "type": "blob",
+      "sha": "4808069763fc82b53b29798d6228c4f3a1ca7d2a",
+      "size": 941
+    },
+    {
+      "path": "scripts/inspect_svg_clean.ps1",
+      "type": "blob",
+      "sha": "9e19f1a7a40c1379f5999aa5300ed651cf0a4771",
+      "size": 461
+    },
+    {
+      "path": "scripts/make_previews.ps1",
+      "type": "blob",
+      "sha": "f30378522c1e576587e4d5bad9a9a95c402574d0",
+      "size": 1059
+    },
+    {
+      "path": "scripts/process_classic_set_images.ps1",
+      "type": "blob",
+      "sha": "317c9f1f133cbf5a4b3472a4f4eb19b6c96e5401",
+      "size": 6406
+    },
+    {
+      "path": "scripts/render_exact_svgs.ps1",
+      "type": "blob",
+      "sha": "5274c3f213339e9e312fe3e41fdf251ad64cd972",
+      "size": 2837
+    },
+    {
+      "path": "scripts/render_inline_svgs.ps1",
+      "type": "blob",
+      "sha": "8040a76bac48cb758e1304804b1867c65a87a957",
+      "size": 2649
+    },
+    {
+      "path": "scripts/render_svg_24bpp.ps1",
+      "type": "blob",
+      "sha": "81b1b78baa9be32d04c20eb559bb18b90693a40e",
+      "size": 4255
+    },
+    {
+      "path": "scripts/render_svg_exact_math.ps1",
+      "type": "blob",
+      "sha": "ad674bc17bd6534e213cee006962d1a330b1277d",
+      "size": 4623
+    },
+    {
+      "path": "scripts/update_final_product_images.ps1",
+      "type": "blob",
+      "sha": "a8253c4264eaa59ce355ee047ee223fa49850ae2",
+      "size": 9522
+    },
+    {
+      "path": "scripts/update_pink_navy_mains.ps1",
+      "type": "blob",
+      "sha": "423ea3f65006c5ce1b34e6ef613289094fd21c9c",
+      "size": 3057
+    },
+    {
+      "path": "server",
+      "type": "tree",
+      "sha": "8aa107f88fddbea40728dc96935e550e905af602"
+    },
+    {
+      "path": "server/apiHandler.js",
+      "type": "blob",
+      "sha": "4a7ed2f6b10b88149f64bbce5df4a9f25e06348c",
+      "size": 8629
+    },
+    {
+      "path": "server/index.js",
+      "type": "blob",
+      "sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "size": 21536
+    },
+    {
+      "path": "server/lib",
+      "type": "tree",
+      "sha": "3b2e8a96f79701266722303a382c27fabdaad7b0"
+    },
+    {
+      "path": "server/lib/accountDb.js",
+      "type": "blob",
+      "sha": "fac102c55bf42c733665afbf7fd46740c0b61ddb",
+      "size": 30850
+    },
+    {
+      "path": "server/lib/adminAuth.js",
+      "type": "blob",
+      "sha": "f1635948f528fea3481e101e1758df8f586cc47c",
+      "size": 4473
+    },
+    {
+      "path": "server/lib/adminOrders.js",
+      "type": "blob",
+      "sha": "341c05d65868fbd632679db4cac5b6c8e73ba8f6",
+      "size": 128
+    },
+    {
+      "path": "server/lib/adminOrdersHandler.js",
+      "type": "blob",
+      "sha": "16fb17992353f4fef635809981f32bac9f0e8502",
+      "size": 12817
+    },
+    {
+      "path": "server/lib/authCrypto.js",
+      "type": "blob",
+      "sha": "f8e92b8b70a36bd80dee8f920bb96462ef9a0d07",
+      "size": 3709
+    },
+    {
+      "path": "server/lib/authEndpoints.js",
+      "type": "blob",
+      "sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "size": 27682
+    },
+    {
+      "path": "server/lib/customerSessionMiddleware.js",
+      "type": "blob",
+      "sha": "2188501d19df80fb1d0bdb471b8a24eef1259c43",
+      "size": 3736
+    },
+    {
+      "path": "server/lib/emailAccount.js",
+      "type": "blob",
+      "sha": "e1f1796beaabbcfa641515db5d1eb6d0f52a7631",
+      "size": 15901
+    },
+    {
+      "path": "server/lib/emailConfig.js",
+      "type": "blob",
+      "sha": "1b234e71a519f6c173d41fcf0915a8ddcfb79316",
+      "size": 2716
+    },
+    {
+      "path": "server/lib/emailCustomer.js",
+      "type": "blob",
+      "sha": "f17e4ef3517b02bda3ffaa3fd1716def5545f886",
+      "size": 34300
+    },
+    {
+      "path": "server/lib/emailOwner.js",
+      "type": "blob",
+      "sha": "66f0e4687505014e10a4088d34764bf18cb39e12",
+      "size": 5545
+    },
+    {
+      "path": "server/lib/emailStatusUpdates.js",
+      "type": "blob",
+      "sha": "77b44149fb6891b2d7e2b144974fc492bd058073",
+      "size": 17346
+    },
+    {
+      "path": "server/lib/googleSheets.js",
+      "type": "blob",
+      "sha": "c1857b173005667b629dfcd9c65780014269d2f8",
+      "size": 16796
+    },
+    {
+      "path": "server/lib/orderEvents.js",
+      "type": "blob",
+      "sha": "475e1ac96e757ef6d1e8f3f2ca32724df211f8de",
+      "size": 4813
+    },
+    {
+      "path": "server/lib/orderPersistence.js",
+      "type": "blob",
+      "sha": "fe6a6eab6b854ad709bf942a7bd624691e2eeeed",
+      "size": 4138
+    },
+    {
+      "path": "server/lib/orderTokenService.js",
+      "type": "blob",
+      "sha": "1404cfca65423ba72d00503c5a289abd769951cd",
+      "size": 941
+    },
+    {
+      "path": "server/lib/paymentQrService.js",
+      "type": "blob",
+      "sha": "5d29e9cea2772e830f611470adeeee2d468ad9ff",
+      "size": 3374
+    },
+    {
+      "path": "server/lib/paymentWebhook.js",
+      "type": "blob",
+      "sha": "b63f8f26211d5f0b134435f08e1df4a7366004d3",
+      "size": 11892
+    },
+    {
+      "path": "server/lib/pricingValidator.js",
+      "type": "blob",
+      "sha": "6d1d1b066de7ac23b94290643eb785d8592cf7d9",
+      "size": 5301
+    },
+    {
+      "path": "server/lib/providerOAuth.js",
+      "type": "blob",
+      "sha": "d40b0f780e985f8d1d5573df40986e8da844858c",
+      "size": 5037
+    },
+    {
+      "path": "server/lib/rateLimiter.js",
+      "type": "blob",
+      "sha": "201a0c33ea49637838f97f0a5ee7fdbe593dac54",
+      "size": 2332
+    },
+    {
+      "path": "server/lib/smsService.js",
+      "type": "blob",
+      "sha": "384c5b67077e3b87805afaf096bc4e25485b5b49",
+      "size": 4706
+    },
+    {
+      "path": "server/lib/stockValidator.js",
+      "type": "blob",
+      "sha": "754fa19db77203cd2f40960aad3e09588acccd7e",
+      "size": 4731
+    },
+    {
+      "path": "server/lib/voucherValidator.js",
+      "type": "blob",
+      "sha": "392519601bd05d43ac54954342daa4f7d51bc645",
+      "size": 4170
+    },
+    {
+      "path": "src",
+      "type": "tree",
+      "sha": "5a398d26bdc4dfad633582a7aec80d24d84c037a"
+    },
+    {
+      "path": "src/App.jsx",
+      "type": "blob",
+      "sha": "493419cedf76dbe6635eaa5a93ca98f89b878697",
+      "size": 2662
+    },
+    {
+      "path": "src/assets",
+      "type": "tree",
+      "sha": "041668510b7a59cd88960241140da0212644a219"
+    },
+    {
+      "path": "src/assets/images",
+      "type": "tree",
+      "sha": "757412cd715fb118255a81f78abf5cb6b6e008c2"
+    },
+    {
+      "path": "src/assets/images/craftsmanship-detail.jpg",
+      "type": "blob",
+      "sha": "691f998112fdf5fbeb491d27fea41d4d6a3f9176",
+      "size": 366893
+    },
+    {
+      "path": "src/assets/images/fabric-macro.jpg",
+      "type": "blob",
+      "sha": "d13963579c2c46ee425bffced06bb54ddff126d1",
+      "size": 779073
+    },
+    {
+      "path": "src/assets/images/hero-campaign.jpg",
+      "type": "blob",
+      "sha": "d09093b0c402562d6b02212870fd57024790e615",
+      "size": 771024
+    },
+    {
+      "path": "src/assets/images/hero-slide-01.jpg",
+      "type": "blob",
+      "sha": "a1d2e6bd0659950ff4afe9b7a05b6205cd494231",
+      "size": 613628
+    },
+    {
+      "path": "src/assets/images/hero-slide-02.jpg",
+      "type": "blob",
+      "sha": "89007b6d2688505f63cb1171183027cebbd4ee65",
+      "size": 543300
+    },
+    {
+      "path": "src/assets/images/hero-slide-03.jpg",
+      "type": "blob",
+      "sha": "0bd4d973852538e8a6a68f97a7383a0c4c4731f7",
+      "size": 552739
+    },
+    {
+      "path": "src/assets/images/hero-slide-04.jpg",
+      "type": "blob",
+      "sha": "1d9915b0da159192499cb6eb4cf0881250322d6e",
+      "size": 607252
+    },
+    {
+      "path": "src/assets/images/lifestyle-navy-flatlay.jpg",
+      "type": "blob",
+      "sha": "ad41a306028447cb8be4b91b1884e020c432fc56",
+      "size": 385321
+    },
+    {
+      "path": "src/assets/images/lifestyle-night.jpg",
+      "type": "blob",
+      "sha": "c42947fb30969e8fd7c567cefa1706e070809fb4",
+      "size": 306943
+    },
+    {
+      "path": "src/assets/images/logo.jpg",
+      "type": "blob",
+      "sha": "28b42f842145c15e087eddcf7b833bf0591079ca",
+      "size": 509616
+    },
+    {
+      "path": "src/assets/images/product-collection.jpg",
+      "type": "blob",
+      "sha": "69b77391fe944295c9d7d4fda9f475b2672bae46",
+      "size": 745183
+    },
+    {
+      "path": "src/assets/images/story-brown-craftsmanship.jpg",
+      "type": "blob",
+      "sha": "691f998112fdf5fbeb491d27fea41d4d6a3f9176",
+      "size": 366893
+    },
+    {
+      "path": "src/assets/images/story-daybreak-material.jpg",
+      "type": "blob",
+      "sha": "c42947fb30969e8fd7c567cefa1706e070809fb4",
+      "size": 306943
+    },
+    {
+      "path": "src/assets/images/story-hearth-material.jpg",
+      "type": "blob",
+      "sha": "691f998112fdf5fbeb491d27fea41d4d6a3f9176",
+      "size": 366893
+    },
+    {
+      "path": "src/assets/images/story-pink-tea.jpg",
+      "type": "blob",
+      "sha": "c42947fb30969e8fd7c567cefa1706e070809fb4",
+      "size": 306943
+    },
+    {
+      "path": "src/assets/images/story-stillwater-material.jpg",
+      "type": "blob",
+      "sha": "ad41a306028447cb8be4b91b1884e020c432fc56",
+      "size": 385321
+    },
+    {
+      "path": "src/components",
+      "type": "tree",
+      "sha": "c39e643ec27b0870d493b467fffa3bbc8e700b91"
+    },
+    {
+      "path": "src/components/cart",
+      "type": "tree",
+      "sha": "13fb908ad05c380ee82350e15c6ee2b67de68853"
+    },
+    {
+      "path": "src/components/cart/CartDrawer.jsx",
+      "type": "blob",
+      "sha": "cc6888bcff85579977d8c72d7e52964b79654e0c",
+      "size": 6503
+    },
+    {
+      "path": "src/components/cart/CartItemRow.jsx",
+      "type": "blob",
+      "sha": "eef998aaa2985ce4ba70f6acdce0fd92f4c5bae9",
+      "size": 3448
+    },
+    {
+      "path": "src/components/cart/CartSummary.jsx",
+      "type": "blob",
+      "sha": "0aaa3d3e288171b5fa0e3111c6523ab92371a709",
+      "size": 5113
+    },
+    {
+      "path": "src/components/cart/FreeShippingBar.jsx",
+      "type": "blob",
+      "sha": "6990f02990af801c6c69370d8e6c452ec5909a1d",
+      "size": 1001
+    },
+    {
+      "path": "src/components/cart/VoucherInput.jsx",
+      "type": "blob",
+      "sha": "82f747abd416f4904ebe70297aa1077facc6b8a6",
+      "size": 5364
+    },
+    {
+      "path": "src/components/layout",
+      "type": "tree",
+      "sha": "097fdd60f393a8d57ffd8dac7cb20b8a489326aa"
+    },
+    {
+      "path": "src/components/layout/Header.jsx",
+      "type": "blob",
+      "sha": "0400f8da052d2bad065892656e097f705803dd45",
+      "size": 14547
+    },
+    {
+      "path": "src/components/product",
+      "type": "tree",
+      "sha": "47d292a72b1e57a2031b3f7ce1b4a94855800f56"
+    },
+    {
+      "path": "src/components/product/ColorSelector.jsx",
+      "type": "blob",
+      "sha": "056dee407b3b0f711e0d31d94004866a576e9d38",
+      "size": 4693
+    },
+    {
+      "path": "src/components/product/ProductAccordion.jsx",
+      "type": "blob",
+      "sha": "26912349969c1ebddb22f5e8c1d8c82295f6a02d",
+      "size": 17266
+    },
+    {
+      "path": "src/components/product/ProductCard.jsx",
+      "type": "blob",
+      "sha": "3e309d6d41232b327bbd40b77b89ff0ed857ef83",
+      "size": 7478
+    },
+    {
+      "path": "src/components/product/ProductImageGallery.jsx",
+      "type": "blob",
+      "sha": "869c9cae50748abb38f304acba102481b7b0d174",
+      "size": 8326
+    },
+    {
+      "path": "src/components/product/ProductInfo.jsx",
+      "type": "blob",
+      "sha": "ce987d4a6e8908922ef4963d3521259712ce1df4",
+      "size": 15523
+    },
+    {
+      "path": "src/components/product/ProductReviews.jsx",
+      "type": "blob",
+      "sha": "c48bea9012eea046145caab82c0c5124e2a14285",
+      "size": 5549
+    },
+    {
+      "path": "src/components/product/QuantitySelector.jsx",
+      "type": "blob",
+      "sha": "6c14a08f8ce9426cee9d265a98d5fc54bbc7d206",
+      "size": 1731
+    },
+    {
+      "path": "src/components/product/QuickViewModal.jsx",
+      "type": "blob",
+      "sha": "96727aa7980bd3de6ef44969b577fb2f1d8a52cb",
+      "size": 6296
+    },
+    {
+      "path": "src/components/product/RelatedProducts.jsx",
+      "type": "blob",
+      "sha": "6dd961ac20574ed421e2fab6456f4e2e049fc0cc",
+      "size": 4702
+    },
+    {
+      "path": "src/components/product/SizeGuideModal.jsx",
+      "type": "blob",
+      "sha": "aeb60c5f0ff45c1f75389d11627515bba7113c19",
+      "size": 7091
+    },
+    {
+      "path": "src/components/product/SizeSelector.jsx",
+      "type": "blob",
+      "sha": "15cd9e182474a792b1b92bf67442d56877a2bfd5",
+      "size": 2483
+    },
+    {
+      "path": "src/components/product/StickyMobileAtc.jsx",
+      "type": "blob",
+      "sha": "496802f8754809571c5ec10cf9c2e349d6cb7789",
+      "size": 3875
+    },
+    {
+      "path": "src/components/product/WishlistButton.jsx",
+      "type": "blob",
+      "sha": "27741c17f4d60f7b055d496fb1903c9bdbf04607",
+      "size": 47
+    },
+    {
+      "path": "src/components/sections",
+      "type": "tree",
+      "sha": "c4fd2596ee60b9c33ba24380888687dea1b70ce7"
+    },
+    {
+      "path": "src/components/sections/BrandManifesto.jsx",
+      "type": "blob",
+      "sha": "394691d310daa59f3be4057e18941a2e0c9eaa43",
+      "size": 5130
+    },
+    {
+      "path": "src/components/sections/CareFaqSection.jsx",
+      "type": "blob",
+      "sha": "15299d38f9fb4b7167c950d5a90326201d8c7aae",
+      "size": 4285
+    },
+    {
+      "path": "src/components/sections/CraftsmanshipStrip.jsx",
+      "type": "blob",
+      "sha": "519ea8f4068e81a983b003f18839ad1b23ec888f",
+      "size": 1265
+    },
+    {
+      "path": "src/components/sections/DecorativeDivider.jsx",
+      "type": "blob",
+      "sha": "0a9c07945eb6f75db4666704880263b352b5fa02",
+      "size": 133
+    },
+    {
+      "path": "src/components/sections/EditorialFeatureStories.jsx",
+      "type": "blob",
+      "sha": "35a661085c87fa72848959245fdae39ffd4d49ac",
+      "size": 12153
+    },
+    {
+      "path": "src/components/sections/EditorialReviews.jsx",
+      "type": "blob",
+      "sha": "117ce0df28fb5488d29135a7a8b1857e88f61f5f",
+      "size": 4663
+    },
+    {
+      "path": "src/components/sections/FabricStorySection.jsx",
+      "type": "blob",
+      "sha": "e3969e3fc163c34f0e2ca07a8317a582df9678b1",
+      "size": 8051
+    },
+    {
+      "path": "src/components/sections/FeatureSection.jsx",
+      "type": "blob",
+      "sha": "a60786846e1cee90004acefdd5a4cdab775a7244",
+      "size": 2475
+    },
+    {
+      "path": "src/components/sections/FinalCtaFooter.jsx",
+      "type": "blob",
+      "sha": "c241b389aad1968ba5d1d3ced62e4c52c6ca4526",
+      "size": 9200
+    },
+    {
+      "path": "src/components/sections/HeroSection.jsx",
+      "type": "blob",
+      "sha": "484c6bd8dbb7c20a7e24fb24750ae493baea062e",
+      "size": 7067
+    },
+    {
+      "path": "src/components/sections/NightRitualSection.jsx",
+      "type": "blob",
+      "sha": "55ebb13bb144924ea32e4473e35368090cfd5247",
+      "size": 5548
+    },
+    {
+      "path": "src/components/sections/PricingSection.jsx",
+      "type": "blob",
+      "sha": "75212b7e29d94cedd0236f42eec65c6a50d21180",
+      "size": 9152
+    },
+    {
+      "path": "src/components/sections/ProductEditSection.jsx",
+      "type": "blob",
+      "sha": "a37f0af632209c6e79622500b3b5fcb0b807a291",
+      "size": 12946
+    },
+    {
+      "path": "src/components/sections/Section10ComparisonTable.jsx",
+      "type": "blob",
+      "sha": "6ac99a9f6b120027eb276e329e1a5bb7bbff4efe",
+      "size": 4019
+    },
+    {
+      "path": "src/components/sections/Section11CtaForm.jsx",
+      "type": "blob",
+      "sha": "8fd7d4c9b23958360cd6ebad29a7db2d9d54f77a",
+      "size": 8715
+    },
+    {
+      "path": "src/components/sections/Section12Footer.jsx",
+      "type": "blob",
+      "sha": "4551f5f4b9ec3cf8aad088ea0967ef7273350f1f",
+      "size": 10881
+    },
+    {
+      "path": "src/components/sections/Section1Header.jsx",
+      "type": "blob",
+      "sha": "9759aa7fdc1c1a6e4edddcf4904b40bd4198164b",
+      "size": 5308
+    },
+    {
+      "path": "src/components/sections/Section2Hero.jsx",
+      "type": "blob",
+      "sha": "fdf28373445e6e7c961bee0908d6b0641c216310",
+      "size": 9663
+    },
+    {
+      "path": "src/components/sections/Section3FeaturedProducts.jsx",
+      "type": "blob",
+      "sha": "e0bf112f47bebbdba4deacc6772c9427072a81ca",
+      "size": 7745
+    },
+    {
+      "path": "src/components/sections/Section4FeatureGrid.jsx",
+      "type": "blob",
+      "sha": "4e88cee27582e9e76a10cd518f8912dbdde3dadf",
+      "size": 4357
+    },
+    {
+      "path": "src/components/sections/Section5DarkContrast.jsx",
+      "type": "blob",
+      "sha": "f54786a35fcce2839ae28fe51b7a99d5452ac948",
+      "size": 5005
+    },
+    {
+      "path": "src/components/sections/Section6ReversedLayout.jsx",
+      "type": "blob",
+      "sha": "85f0b8ad9c9c01e56cb6beebff71ad90d7b54199",
+      "size": 4831
+    },
+    {
+      "path": "src/components/sections/Section7CustomerStory.jsx",
+      "type": "blob",
+      "sha": "89fae1fa8cdbef10397c6fc5c4442120115d6605",
+      "size": 4463
+    },
+    {
+      "path": "src/components/sections/Section8DeepFeature.jsx",
+      "type": "blob",
+      "sha": "ef6a0a38b30bdc349d2afd94a59cf811819350e9",
+      "size": 10581
+    },
+    {
+      "path": "src/components/sections/Section9LargeBlockText.jsx",
+      "type": "blob",
+      "sha": "1e773c8c246e6aa9586dd5268bbfb5f8ab0e84fe",
+      "size": 3075
+    },
+    {
+      "path": "src/components/sections/TrustStrip.jsx",
+      "type": "blob",
+      "sha": "ccc3b0ebe3fc0af7decc4d75abf17908d11ec682",
+      "size": 1634
+    },
+    {
+      "path": "src/components/ui",
+      "type": "tree",
+      "sha": "8d1f2eaafad25435bf78fe9271091de93d5db7b9"
+    },
+    {
+      "path": "src/components/ui/Accordion.jsx",
+      "type": "blob",
+      "sha": "e8ff51eefaa4cbe2626e3f9fce1322e29aa9f6f6",
+      "size": 1759
+    },
+    {
+      "path": "src/components/ui/AccountPromptBanner.jsx",
+      "type": "blob",
+      "sha": "68d7f4e3bf1d0b0c58ad74a3bfef9e467aae5d86",
+      "size": 25460
+    },
+    {
+      "path": "src/components/ui/BrandLogo.jsx",
+      "type": "blob",
+      "sha": "ab1bb4f6af6baa8410254ef2d408d277ff09d622",
+      "size": 3372
+    },
+    {
+      "path": "src/components/ui/Button.jsx",
+      "type": "blob",
+      "sha": "10b42df8be0118e15c8311f16bfcdf14afabfc88",
+      "size": 1367
+    },
+    {
+      "path": "src/components/ui/Modal.jsx",
+      "type": "blob",
+      "sha": "78239cc4ce6ec3aa8502caacf3848508cd1393a8",
+      "size": 2366
+    },
+    {
+      "path": "src/components/ui/Navbar.jsx",
+      "type": "blob",
+      "sha": "a3b92dfc670741992b59dc48589c6b03794f2b0b",
+      "size": 9066
+    },
+    {
+      "path": "src/components/ui/OrdersHistoryDrawer.jsx",
+      "type": "blob",
+      "sha": "2a3f3a74bb2508d7970e26e2387d38e87033bc0c",
+      "size": 34680
+    },
+    {
+      "path": "src/components/ui/PlaceholderImage.jsx",
+      "type": "blob",
+      "sha": "84d86df9cd712ee3881d61328441353732142873",
+      "size": 407
+    },
+    {
+      "path": "src/components/ui/PolicyModal.jsx",
+      "type": "blob",
+      "sha": "11af3d4f75e3b1dc093a3a3a82e0af6dc6848b00",
+      "size": 7920
+    },
+    {
+      "path": "src/components/ui/PrimaryButton.jsx",
+      "type": "blob",
+      "sha": "daa3ff4fe7cbea34fe6eada8a3ebbf3d9f0a6aa6",
+      "size": 1390
+    },
+    {
+      "path": "src/components/ui/QuickConsultationWidget.jsx",
+      "type": "blob",
+      "sha": "598e227f7d940ffd1ad3d39465e7e6055b34d81e",
+      "size": 3468
+    },
+    {
+      "path": "src/components/ui/ScrollToTop.jsx",
+      "type": "blob",
+      "sha": "10b0c98047663d374f0893433247c5acd36bb529",
+      "size": 276
+    },
+    {
+      "path": "src/components/ui/SectionContainer.jsx",
+      "type": "blob",
+      "sha": "683568db952569a0a4232122da7527d5f1a6ea47",
+      "size": 195
+    },
+    {
+      "path": "src/components/ui/SizeGuideModal.jsx",
+      "type": "blob",
+      "sha": "2b24b69106a2586643a865a045c05cd0c6b16f0a",
+      "size": 4424
+    },
+    {
+      "path": "src/components/ui/StarRow.jsx",
+      "type": "blob",
+      "sha": "32968d13dc8d52dd1687fc49196f6c16898e7db5",
+      "size": 431
+    },
+    {
+      "path": "src/components/ui/Toast.jsx",
+      "type": "blob",
+      "sha": "28e5ae903230e9e9b3a98bf0c06f998eee7df8a3",
+      "size": 2204
+    },
+    {
+      "path": "src/components/ui/VerifiedBadge.jsx",
+      "type": "blob",
+      "sha": "0e3d29038820200f23cd88b059eaa7476ea7ba0f",
+      "size": 294
+    },
+    {
+      "path": "src/components/ui/WishlistButton.jsx",
+      "type": "blob",
+      "sha": "7b834defffad45559a18cb0f4898ffb7e4dc3f32",
+      "size": 3247
+    },
+    {
+      "path": "src/components/ui/WishlistDrawer.jsx",
+      "type": "blob",
+      "sha": "6988bde3c102e975f7c9966f06f27234c41904a4",
+      "size": 9514
+    },
+    {
+      "path": "src/data",
+      "type": "tree",
+      "sha": "8cd48e53b163eea404306e5152bedd02167fb752"
+    },
+    {
+      "path": "src/data/checkoutConfig.js",
+      "type": "blob",
+      "sha": "b009f1134d249810be8a95f500f33efa04d33686",
+      "size": 7184
+    },
+    {
+      "path": "src/data/features.js",
+      "type": "blob",
+      "sha": "88091c5dfda2d45160336797ac0387290ce78e4e",
+      "size": 2209
+    },
+    {
+      "path": "src/data/policies.js",
+      "type": "blob",
+      "sha": "1670fc47eb1a24b02c1670f769903f24a38f811b",
+      "size": 7643
+    },
+    {
+      "path": "src/data/pricing.js",
+      "type": "blob",
+      "sha": "daf379c7fe1dfb1185b08433fa27c10a902405f1",
+      "size": 2543
+    },
+    {
+      "path": "src/data/products.js",
+      "type": "blob",
+      "sha": "4101f0a2b915748b21820738f397bbac3758cfd5",
+      "size": 21016
+    },
+    {
+      "path": "src/data/provinces.js",
+      "type": "blob",
+      "sha": "1f1d42828a3f3a4cf96cd7f67b934dc8b5f5caff",
+      "size": 1160
+    },
+    {
+      "path": "src/data/reviews.js",
+      "type": "blob",
+      "sha": "b0aed4f93f8ebdceb95390efbcf29382c482d0ba",
+      "size": 1409
+    },
+    {
+      "path": "src/hooks",
+      "type": "tree",
+      "sha": "a01661f5255adcf94a1764b4a9099851fb104950"
+    },
+    {
+      "path": "src/hooks/useCart.js",
+      "type": "blob",
+      "sha": "ed7049049f4835511467bc8c77d3db220881fee0",
+      "size": 1034
+    },
+    {
+      "path": "src/hooks/useLocalStorage.js",
+      "type": "blob",
+      "sha": "f8b6940060c16c684c74f073060c1532c0403312",
+      "size": 1635
+    },
+    {
+      "path": "src/hooks/useProduct.js",
+      "type": "blob",
+      "sha": "411e2e20446ae4e83211977539496fdc2e96a83a",
+      "size": 292
+    },
+    {
+      "path": "src/index.css",
+      "type": "blob",
+      "sha": "db4965c6b1e43ce9395b1531e74da2859aabbb79",
+      "size": 4414
+    },
+    {
+      "path": "src/lib",
+      "type": "tree",
+      "sha": "3a27e081330d267690ab8ff15aae1724e7e87c05"
+    },
+    {
+      "path": "src/lib/orderService.js",
+      "type": "blob",
+      "sha": "e8d92c5c22b4c223709bf2ffcdbccaa55fdec9e4",
+      "size": 1990
+    },
+    {
+      "path": "src/lib/orderSync.js",
+      "type": "blob",
+      "sha": "eafba058aaffd1684c8f7020766b545187402694",
+      "size": 7744
+    },
+    {
+      "path": "src/main.jsx",
+      "type": "blob",
+      "sha": "f4fa3e5bbf3f1b6515f91965b639b4ec15ae3590",
+      "size": 327
+    },
+    {
+      "path": "src/pages",
+      "type": "tree",
+      "sha": "c2fc58ec355a022762473defedb3209da9c085ff"
+    },
+    {
+      "path": "src/pages/AccountPage.jsx",
+      "type": "blob",
+      "sha": "48a468b6ace281bf67dcf82306572222f5654809",
+      "size": 20161
+    },
+    {
+      "path": "src/pages/BankTransferPaymentPage.jsx",
+      "type": "blob",
+      "sha": "c59d32d319e1debe1df7fe57d1cdf8b4822eb7d7",
+      "size": 30484
+    },
+    {
+      "path": "src/pages/CartPage.jsx",
+      "type": "blob",
+      "sha": "d97a87834b8ddf1df0ff0717f7a220c733f906eb",
+      "size": 11490
+    },
+    {
+      "path": "src/pages/CheckoutPage.jsx",
+      "type": "blob",
+      "sha": "2cfafd5b71d8bc05899bbde714f3a1b55dc72135",
+      "size": 38525
+    },
+    {
+      "path": "src/pages/LandingPage.jsx",
+      "type": "blob",
+      "sha": "fe4dfb654e9754a7b19cefeabfc3b5548a783b33",
+      "size": 3090
+    },
+    {
+      "path": "src/pages/OrderSuccessPage.jsx",
+      "type": "blob",
+      "sha": "58e5b7a97404f78de574a43c2652634af5dc0dfd",
+      "size": 22637
+    },
+    {
+      "path": "src/pages/ProductDetailPage.jsx",
+      "type": "blob",
+      "sha": "1ecbf010851cb908f4fd0c267d590f154afb0cc9",
+      "size": 17378
+    },
+    {
+      "path": "src/pages/UnsubscribePage.jsx",
+      "type": "blob",
+      "sha": "02b605b42444f77011a46535fa48c6e578f6fcb4",
+      "size": 4672
+    },
+    {
+      "path": "src/pages/admin",
+      "type": "tree",
+      "sha": "b79e85819707df1d5ad3f623d221424f0416d8be"
+    },
+    {
+      "path": "src/pages/admin/AdminBroadcastPage.jsx",
+      "type": "blob",
+      "sha": "a625f0037690c39dc69669fd1633a310078aa91d",
+      "size": 25089
+    },
+    {
+      "path": "src/pages/admin/AdminLoginGate.jsx",
+      "type": "blob",
+      "sha": "6d2b445e712f13c46b84bab9b5f788ee98690ab3",
+      "size": 5235
+    },
+    {
+      "path": "src/pages/admin/AdminOrdersPage.jsx",
+      "type": "blob",
+      "sha": "731f9890646711f0273ce9cbc7fc4cd16cfa7b87",
+      "size": 35262
+    },
+    {
+      "path": "src/store",
+      "type": "tree",
+      "sha": "3101c0f6a8cc810705a0fb874d0a158d51ded5be"
+    },
+    {
+      "path": "src/store/cartStore.js",
+      "type": "blob",
+      "sha": "61d14b907ccf33ca68298cc8dcee33b84ad2ced2",
+      "size": 2694
+    },
+    {
+      "path": "src/utils",
+      "type": "tree",
+      "sha": "1720c15a5199180edeb9ccb138a95717831b84c1"
+    },
+    {
+      "path": "src/utils/animations.js",
+      "type": "blob",
+      "sha": "0ac41ae9b26e121d69d0f107a7b9ddeaacaa0753",
+      "size": 327
+    },
+    {
+      "path": "tailwind.config.js",
+      "type": "blob",
+      "sha": "ceec91665fc0b1f09d6c4b5c480f1a7ecc8b4333",
+      "size": 2476
+    },
+    {
+      "path": "test-email.js",
+      "type": "blob",
+      "sha": "b2550b4dd0a6ec9928c411750e3012623bd1312b",
+      "size": 3163
+    },
+    {
+      "path": "tests",
+      "type": "tree",
+      "sha": "13f27f9623265fcf6d493b0a17862e92584caecd"
+    },
+    {
+      "path": "tests/customerAuthSecurity.test.js",
+      "type": "blob",
+      "sha": "9421579ceac01c978848b3e646cfa4cf9efd5b42",
+      "size": 15495
+    },
+    {
+      "path": "tests/phase1SecurityAndIntegrity.test.js",
+      "type": "blob",
+      "sha": "3d34c697579e757ca52c007cb6ac514d6b7bb3c5",
+      "size": 12380
+    },
+    {
+      "path": "tests/phase2Integrity.test.js",
+      "type": "blob",
+      "sha": "414f58fd0533910a64894e83094c5c9b53f6c635",
+      "size": 6266
+    },
+    {
+      "path": "tests/pricingValidator.test.js",
+      "type": "blob",
+      "sha": "367ea28de1dbfb925c9585a84be954e9f62eba8e",
+      "size": 3857
+    },
+    {
+      "path": "tests/stockValidator.test.js",
+      "type": "blob",
+      "sha": "4a0b613feb8282f6efca8e917661fb6407d2d3cb",
+      "size": 1166
+    },
+    {
+      "path": "tests/test-api.js",
+      "type": "blob",
+      "sha": "58755d232dc076095d9766270f91a7d03880e8fb",
+      "size": 6368
+    },
+    {
+      "path": "tests/test-db.js",
+      "type": "blob",
+      "sha": "cfb94f8f7a044c72ccba4c23121046a1a1bf8eb4",
+      "size": 1920
+    },
+    {
+      "path": "vite.config.js",
+      "type": "blob",
+      "sha": "f80a7dc3513964e18977505237991b09118c2a40",
+      "size": 2104
+    }
+  ]
+}

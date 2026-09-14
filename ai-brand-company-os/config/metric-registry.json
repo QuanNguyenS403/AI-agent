@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "status": "CONTRACT_ONLY",
+  "metrics": [
+    {
+      "id": "cash_settled_vnd",
+      "owner": "finance",
+      "unit": "VND",
+      "source": "bank/provider reconciled ledger",
+      "unknown_value": null
+    },
+    {
+      "id": "realized_organic_profit_vnd",
+      "owner": "finance",
+      "unit": "VND",
+      "source": "closed ledger plus verified organic attribution",
+      "unknown_value": null
+    },
+    {
+      "id": "verified_order_conversion",
+      "owner": "analytics",
+      "unit": "ratio",
+      "numerator": "unique verified paid orders",
+      "denominator": "eligible qualified sessions",
+      "zero_denominator": null,
+      "source": "commerce + consented measurement"
+    },
+    {
+      "id": "attribution_coverage",
+      "owner": "analytics",
+      "unit": "ratio",
+      "numerator": "settled orders with evidenced attribution",
+      "denominator": "settled orders in same window",
+      "zero_denominator": null
+    },
+    {
+      "id": "refund_rate",
+      "owner": "finance",
+      "unit": "ratio",
+      "numerator": "refunded settled orders",
+      "denominator": "settled orders in mature cohort",
+      "zero_denominator": null
+    },
+    {
+      "id": "unauthorized_external_actions",
+      "owner": "governance",
+      "unit": "count",
+      "source": "complete provider/executor audit",
+      "unknown_value": null
+    }
+  ],
+  "default_freshness_sla_hours": null,
+  "thresholds_require_owner": true
+}

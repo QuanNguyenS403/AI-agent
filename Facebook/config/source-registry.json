@@ -1,0 +1,203 @@
+{
+  "version": "1.0.0",
+  "baseline_commit": "72e9c67ed4f62de697625e680771a139341e070a",
+  "authority_order": [
+    "Owner authorized scope",
+    "Company OS constitution and policy",
+    "current Facebook SKILL and references 01-08",
+    "approved scoped evidence"
+  ],
+  "active_runtime_sources": [
+    "ai-brand-company-os/config/company-state.json",
+    "ai-brand-company-os/config/policy.json",
+    "ai-brand-company-os/config/agent-registry.json",
+    "Facebook/config/runtime.json",
+    "Facebook/config/product-truth-status.json",
+    "integrations/pijama/product-snapshot.json"
+  ],
+  "legacy": [
+    {
+      "path": "Facebook/CAM_NANG_TOAN_DIEN_THUONG_HIEU_VA_TU_DONG_HOA.md",
+      "baseline_blob_sha": "ec921c6ca5368c7f1dc76450795ed33e7fe892e4",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/assets/artifact_structure.txt",
+      "baseline_blob_sha": "f2777fdbb42f24dea14e41a5056a2a42674b7792",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/ai_stack_config.json",
+      "baseline_blob_sha": "766e1f9c5c26a3089859c592ac8aaa2619445aa2",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/brand.json",
+      "baseline_blob_sha": "7bc0806d9a1c417810192098429a8cb27881e3b6",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/brand_profile.yaml",
+      "baseline_blob_sha": "1bb43d350defc6a8d3cca320a7ef886c05b8acba",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/model_assets_registry.json",
+      "baseline_blob_sha": "680888e8af2050cfcb3227db3779a6752ad0fe87",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/offer_catalog.json",
+      "baseline_blob_sha": "bf588e0038576cc19cff4c265659f88ee7e13e44",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/config/product_truth_dossier.yaml",
+      "baseline_blob_sha": "1c5fb9629771c82331fe7bbc152849d60bdd7185",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/data/scheduled_calendar.json",
+      "baseline_blob_sha": "75631af56a6521a58eeb0b98357f887d4777ab5c",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/references/campaign_docs/chien-dich-90-ngay.md",
+      "baseline_blob_sha": "b76d0d1929745c43c04f4a3b8d99e2c4ebe5933b",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/references/campaign_docs/prompt-thuc-thi-ai-agent.md",
+      "baseline_blob_sha": "2d9dc64f58302bfb763f6dcdff4d0bacf6665175",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/references/customer_insights_and_questions_matrix.md",
+      "baseline_blob_sha": "cac95b734f42ff9c78e98b347fc5b479e9f8f492",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/references/qa_eval_cases.md",
+      "baseline_blob_sha": "e804dfdd254b5f5772fd80af7849bcef00dbf6d2",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/references/three_initial_campaigns_brief.md",
+      "baseline_blob_sha": "b5ba9c03d9ea8ca21616c210ed5e542f1ec2d065",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788418593038.json",
+      "baseline_blob_sha": "3d8716c058d690b7c525d73ae255dacefa6d3f56",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788418721772.json",
+      "baseline_blob_sha": "d82a3ea64b3bf28dc9d50bb31826cd96f1b18fa1",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788418736852.json",
+      "baseline_blob_sha": "9cf3f0ff640197dfccb016454ac8c566b6d82038",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788421397780.json",
+      "baseline_blob_sha": "f922c204e9fdd85c659c0065f3b9901ee4fa60b3",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788421789300.json",
+      "baseline_blob_sha": "d1d7f9571500650f5ea286ba05573e0d91554a2b",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788422824333.json",
+      "baseline_blob_sha": "1c65fdb927c218d0b036168129b7a938367af315",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788422983057.json",
+      "baseline_blob_sha": "ef4321f3115677cec8e97684e5d2b0dae2fb2d54",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788423784699.json",
+      "baseline_blob_sha": "dec88948e19f4ade6ac700ff9df4f5239ec8ac2e",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788498489998.json",
+      "baseline_blob_sha": "fd79fe75fcd35ad2052225a005426204dda36605",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/reports/report_1788503350299.json",
+      "baseline_blob_sha": "cfe5074c844399a626a5c7aa6a516998814b0b44",
+      "state": "QUARANTINED_LEGACY",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/facebook-brand-automation.skill",
+      "baseline_blob_sha": "28086db2a658e2b3a9888ab40c2ac8d430c879ff",
+      "state": "BINARY_NOT_INSPECTED",
+      "execution_allowed": false,
+      "evidence_authority": false
+    },
+    {
+      "path": "Facebook/instagram-brand-automation.skill",
+      "baseline_blob_sha": "c07a6ddf8b1a558ef567b60a3ec474c67bd6658f",
+      "state": "BINARY_NOT_INSPECTED",
+      "execution_allowed": false,
+      "evidence_authority": false
+    }
+  ],
+  "rule": "Unlisted sources do not grant rights. Legacy SUCCESS or APPROVED is not production evidence."
+}

@@ -1,0 +1,1176 @@
+{
+  "repository": "QuanNguyenS403/pijama",
+  "commit": "828409af7a26a2a5f4b4420789fc753588c9e1dc",
+  "audit_date": "2026-09-14",
+  "scope": "Pinned source retrieval and static targeted review; no production access or commerce test execution",
+  "retrieved_text_count": 129,
+  "files": [
+    {
+      "path": ".env.example",
+      "blob_sha": "97cffb67b1aa71dfa02c79b210f191a381961119",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "package.json",
+      "blob_sha": "7e99d546c3da38c8a2acc6773866dd96f5c07eaf",
+      "role": "stack and commands",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "PROTECTED-DATA.md",
+      "blob_sha": "88dff26d6f1f5f210509260aa17407772c060210",
+      "role": "protected boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "README.md",
+      "blob_sha": "07cfbc9d77a9d65e9b646bda86af21ad15ce3c90",
+      "role": "documented behavior",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/apiHandler.js",
+      "blob_sha": "4a7ed2f6b10b88149f64bbce5df4a9f25e06348c",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/index.js",
+      "blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/accountDb.js",
+      "blob_sha": "fac102c55bf42c733665afbf7fd46740c0b61ddb",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/adminAuth.js",
+      "blob_sha": "f1635948f528fea3481e101e1758df8f586cc47c",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/adminOrders.js",
+      "blob_sha": "341c05d65868fbd632679db4cac5b6c8e73ba8f6",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/adminOrdersHandler.js",
+      "blob_sha": "16fb17992353f4fef635809981f32bac9f0e8502",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/authCrypto.js",
+      "blob_sha": "f8e92b8b70a36bd80dee8f920bb96462ef9a0d07",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/authEndpoints.js",
+      "blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/customerSessionMiddleware.js",
+      "blob_sha": "2188501d19df80fb1d0bdb471b8a24eef1259c43",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/emailAccount.js",
+      "blob_sha": "e1f1796beaabbcfa641515db5d1eb6d0f52a7631",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/emailConfig.js",
+      "blob_sha": "1b234e71a519f6c173d41fcf0915a8ddcfb79316",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/emailCustomer.js",
+      "blob_sha": "f17e4ef3517b02bda3ffaa3fd1716def5545f886",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/emailOwner.js",
+      "blob_sha": "66f0e4687505014e10a4088d34764bf18cb39e12",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/emailStatusUpdates.js",
+      "blob_sha": "77b44149fb6891b2d7e2b144974fc492bd058073",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/googleSheets.js",
+      "blob_sha": "c1857b173005667b629dfcd9c65780014269d2f8",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/orderEvents.js",
+      "blob_sha": "475e1ac96e757ef6d1e8f3f2ca32724df211f8de",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/orderPersistence.js",
+      "blob_sha": "fe6a6eab6b854ad709bf942a7bd624691e2eeeed",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/orderTokenService.js",
+      "blob_sha": "1404cfca65423ba72d00503c5a289abd769951cd",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/paymentQrService.js",
+      "blob_sha": "5d29e9cea2772e830f611470adeeee2d468ad9ff",
+      "role": "payment lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/paymentWebhook.js",
+      "blob_sha": "b63f8f26211d5f0b134435f08e1df4a7366004d3",
+      "role": "payment lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/pricingValidator.js",
+      "blob_sha": "6d1d1b066de7ac23b94290643eb785d8592cf7d9",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/providerOAuth.js",
+      "blob_sha": "d40b0f780e985f8d1d5573df40986e8da844858c",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/rateLimiter.js",
+      "blob_sha": "201a0c33ea49637838f97f0a5ee7fdbe593dac54",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/smsService.js",
+      "blob_sha": "384c5b67077e3b87805afaf096bc4e25485b5b49",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/stockValidator.js",
+      "blob_sha": "754fa19db77203cd2f40960aad3e09588acccd7e",
+      "role": "application context",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "server/lib/voucherValidator.js",
+      "blob_sha": "392519601bd05d43ac54954342daa4f7d51bc645",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/App.jsx",
+      "blob_sha": "493419cedf76dbe6635eaa5a93ca98f89b878697",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/cart/CartDrawer.jsx",
+      "blob_sha": "cc6888bcff85579977d8c72d7e52964b79654e0c",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/cart/CartItemRow.jsx",
+      "blob_sha": "eef998aaa2985ce4ba70f6acdce0fd92f4c5bae9",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/cart/CartSummary.jsx",
+      "blob_sha": "0aaa3d3e288171b5fa0e3111c6523ab92371a709",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/cart/FreeShippingBar.jsx",
+      "blob_sha": "6990f02990af801c6c69370d8e6c452ec5909a1d",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/cart/VoucherInput.jsx",
+      "blob_sha": "82f747abd416f4904ebe70297aa1077facc6b8a6",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/layout/Header.jsx",
+      "blob_sha": "0400f8da052d2bad065892656e097f705803dd45",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ColorSelector.jsx",
+      "blob_sha": "056dee407b3b0f711e0d31d94004866a576e9d38",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ProductAccordion.jsx",
+      "blob_sha": "26912349969c1ebddb22f5e8c1d8c82295f6a02d",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ProductCard.jsx",
+      "blob_sha": "3e309d6d41232b327bbd40b77b89ff0ed857ef83",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ProductImageGallery.jsx",
+      "blob_sha": "869c9cae50748abb38f304acba102481b7b0d174",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ProductInfo.jsx",
+      "blob_sha": "ce987d4a6e8908922ef4963d3521259712ce1df4",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/ProductReviews.jsx",
+      "blob_sha": "c48bea9012eea046145caab82c0c5124e2a14285",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/QuantitySelector.jsx",
+      "blob_sha": "6c14a08f8ce9426cee9d265a98d5fc54bbc7d206",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/QuickViewModal.jsx",
+      "blob_sha": "96727aa7980bd3de6ef44969b577fb2f1d8a52cb",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/RelatedProducts.jsx",
+      "blob_sha": "6dd961ac20574ed421e2fab6456f4e2e049fc0cc",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/SizeGuideModal.jsx",
+      "blob_sha": "aeb60c5f0ff45c1f75389d11627515bba7113c19",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/SizeSelector.jsx",
+      "blob_sha": "15cd9e182474a792b1b92bf67442d56877a2bfd5",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/StickyMobileAtc.jsx",
+      "blob_sha": "496802f8754809571c5ec10cf9c2e349d6cb7789",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/product/WishlistButton.jsx",
+      "blob_sha": "27741c17f4d60f7b055d496fb1903c9bdbf04607",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/BrandManifesto.jsx",
+      "blob_sha": "394691d310daa59f3be4057e18941a2e0c9eaa43",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/CareFaqSection.jsx",
+      "blob_sha": "15299d38f9fb4b7167c950d5a90326201d8c7aae",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/CraftsmanshipStrip.jsx",
+      "blob_sha": "519ea8f4068e81a983b003f18839ad1b23ec888f",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/DecorativeDivider.jsx",
+      "blob_sha": "0a9c07945eb6f75db4666704880263b352b5fa02",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/EditorialFeatureStories.jsx",
+      "blob_sha": "35a661085c87fa72848959245fdae39ffd4d49ac",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/EditorialReviews.jsx",
+      "blob_sha": "117ce0df28fb5488d29135a7a8b1857e88f61f5f",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/FabricStorySection.jsx",
+      "blob_sha": "e3969e3fc163c34f0e2ca07a8317a582df9678b1",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/FeatureSection.jsx",
+      "blob_sha": "a60786846e1cee90004acefdd5a4cdab775a7244",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/FinalCtaFooter.jsx",
+      "blob_sha": "c241b389aad1968ba5d1d3ced62e4c52c6ca4526",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/HeroSection.jsx",
+      "blob_sha": "484c6bd8dbb7c20a7e24fb24750ae493baea062e",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/NightRitualSection.jsx",
+      "blob_sha": "55ebb13bb144924ea32e4473e35368090cfd5247",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/PricingSection.jsx",
+      "blob_sha": "75212b7e29d94cedd0236f42eec65c6a50d21180",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/ProductEditSection.jsx",
+      "blob_sha": "a37f0af632209c6e79622500b3b5fcb0b807a291",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section10ComparisonTable.jsx",
+      "blob_sha": "6ac99a9f6b120027eb276e329e1a5bb7bbff4efe",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section11CtaForm.jsx",
+      "blob_sha": "8fd7d4c9b23958360cd6ebad29a7db2d9d54f77a",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section12Footer.jsx",
+      "blob_sha": "4551f5f4b9ec3cf8aad088ea0967ef7273350f1f",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section1Header.jsx",
+      "blob_sha": "9759aa7fdc1c1a6e4edddcf4904b40bd4198164b",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section2Hero.jsx",
+      "blob_sha": "fdf28373445e6e7c961bee0908d6b0641c216310",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section3FeaturedProducts.jsx",
+      "blob_sha": "e0bf112f47bebbdba4deacc6772c9427072a81ca",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section4FeatureGrid.jsx",
+      "blob_sha": "4e88cee27582e9e76a10cd518f8912dbdde3dadf",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section5DarkContrast.jsx",
+      "blob_sha": "f54786a35fcce2839ae28fe51b7a99d5452ac948",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section6ReversedLayout.jsx",
+      "blob_sha": "85f0b8ad9c9c01e56cb6beebff71ad90d7b54199",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section7CustomerStory.jsx",
+      "blob_sha": "89fae1fa8cdbef10397c6fc5c4442120115d6605",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section8DeepFeature.jsx",
+      "blob_sha": "ef6a0a38b30bdc349d2afd94a59cf811819350e9",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/Section9LargeBlockText.jsx",
+      "blob_sha": "1e773c8c246e6aa9586dd5268bbfb5f8ab0e84fe",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/sections/TrustStrip.jsx",
+      "blob_sha": "ccc3b0ebe3fc0af7decc4d75abf17908d11ec682",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/Accordion.jsx",
+      "blob_sha": "e8ff51eefaa4cbe2626e3f9fce1322e29aa9f6f6",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/AccountPromptBanner.jsx",
+      "blob_sha": "68d7f4e3bf1d0b0c58ad74a3bfef9e467aae5d86",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/BrandLogo.jsx",
+      "blob_sha": "ab1bb4f6af6baa8410254ef2d408d277ff09d622",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/Button.jsx",
+      "blob_sha": "10b42df8be0118e15c8311f16bfcdf14afabfc88",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/Modal.jsx",
+      "blob_sha": "78239cc4ce6ec3aa8502caacf3848508cd1393a8",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/Navbar.jsx",
+      "blob_sha": "a3b92dfc670741992b59dc48589c6b03794f2b0b",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/OrdersHistoryDrawer.jsx",
+      "blob_sha": "2a3f3a74bb2508d7970e26e2387d38e87033bc0c",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/PlaceholderImage.jsx",
+      "blob_sha": "84d86df9cd712ee3881d61328441353732142873",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/PolicyModal.jsx",
+      "blob_sha": "11af3d4f75e3b1dc093a3a3a82e0af6dc6848b00",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/PrimaryButton.jsx",
+      "blob_sha": "daa3ff4fe7cbea34fe6eada8a3ebbf3d9f0a6aa6",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/QuickConsultationWidget.jsx",
+      "blob_sha": "598e227f7d940ffd1ad3d39465e7e6055b34d81e",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/ScrollToTop.jsx",
+      "blob_sha": "10b0c98047663d374f0893433247c5acd36bb529",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/SectionContainer.jsx",
+      "blob_sha": "683568db952569a0a4232122da7527d5f1a6ea47",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/SizeGuideModal.jsx",
+      "blob_sha": "2b24b69106a2586643a865a045c05cd0c6b16f0a",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/StarRow.jsx",
+      "blob_sha": "32968d13dc8d52dd1687fc49196f6c16898e7db5",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/Toast.jsx",
+      "blob_sha": "28e5ae903230e9e9b3a98bf0c06f998eee7df8a3",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/VerifiedBadge.jsx",
+      "blob_sha": "0e3d29038820200f23cd88b059eaa7476ea7ba0f",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/WishlistButton.jsx",
+      "blob_sha": "7b834defffad45559a18cb0f4898ffb7e4dc3f32",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/components/ui/WishlistDrawer.jsx",
+      "blob_sha": "6988bde3c102e975f7c9966f06f27234c41904a4",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/checkoutConfig.js",
+      "blob_sha": "b009f1134d249810be8a95f500f33efa04d33686",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/features.js",
+      "blob_sha": "88091c5dfda2d45160336797ac0387290ce78e4e",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/policies.js",
+      "blob_sha": "1670fc47eb1a24b02c1670f769903f24a38f811b",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/pricing.js",
+      "blob_sha": "daf379c7fe1dfb1185b08433fa27c10a902405f1",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/products.js",
+      "blob_sha": "4101f0a2b915748b21820738f397bbac3758cfd5",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": true,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/provinces.js",
+      "blob_sha": "1f1d42828a3f3a4cf96cd7f67b934dc8b5f5caff",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/data/reviews.js",
+      "blob_sha": "b0aed4f93f8ebdceb95390efbcf29382c482d0ba",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/hooks/useCart.js",
+      "blob_sha": "ed7049049f4835511467bc8c77d3db220881fee0",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/hooks/useLocalStorage.js",
+      "blob_sha": "f8b6940060c16c684c74f073060c1532c0403312",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/hooks/useProduct.js",
+      "blob_sha": "411e2e20446ae4e83211977539496fdc2e96a83a",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/index.css",
+      "blob_sha": "db4965c6b1e43ce9395b1531e74da2859aabbb79",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/lib/orderService.js",
+      "blob_sha": "e8d92c5c22b4c223709bf2ffcdbccaa55fdec9e4",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/lib/orderSync.js",
+      "blob_sha": "eafba058aaffd1684c8f7020766b545187402694",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/main.jsx",
+      "blob_sha": "f4fa3e5bbf3f1b6515f91965b639b4ec15ae3590",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/AccountPage.jsx",
+      "blob_sha": "48a468b6ace281bf67dcf82306572222f5654809",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/admin/AdminBroadcastPage.jsx",
+      "blob_sha": "a625f0037690c39dc69669fd1633a310078aa91d",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/admin/AdminLoginGate.jsx",
+      "blob_sha": "6d2b445e712f13c46b84bab9b5f788ee98690ab3",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/admin/AdminOrdersPage.jsx",
+      "blob_sha": "731f9890646711f0273ce9cbc7fc4cd16cfa7b87",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/BankTransferPaymentPage.jsx",
+      "blob_sha": "c59d32d319e1debe1df7fe57d1cdf8b4822eb7d7",
+      "role": "payment lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/CartPage.jsx",
+      "blob_sha": "d97a87834b8ddf1df0ff0717f7a220c733f906eb",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/CheckoutPage.jsx",
+      "blob_sha": "2cfafd5b71d8bc05899bbde714f3a1b55dc72135",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/LandingPage.jsx",
+      "blob_sha": "fe4dfb654e9754a7b19cefeabfc3b5548a783b33",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/OrderSuccessPage.jsx",
+      "blob_sha": "58e5b7a97404f78de574a43c2652634af5dc0dfd",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/ProductDetailPage.jsx",
+      "blob_sha": "1ecbf010851cb908f4fd0c267d590f154afb0cc9",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/pages/UnsubscribePage.jsx",
+      "blob_sha": "02b605b42444f77011a46535fa48c6e578f6fcb4",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/store/cartStore.js",
+      "blob_sha": "61d14b907ccf33ca68298cc8dcee33b84ad2ced2",
+      "role": "commerce lifecycle",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "src/utils/animations.js",
+      "blob_sha": "0ac41ae9b26e121d69d0f107a7b9ddeaacaa0753",
+      "role": "application context",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/customerAuthSecurity.test.js",
+      "blob_sha": "9421579ceac01c978848b3e646cfa4cf9efd5b42",
+      "role": "identity/consent boundary",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/phase1SecurityAndIntegrity.test.js",
+      "blob_sha": "3d34c697579e757ca52c007cb6ac514d6b7bb3c5",
+      "role": "test source; not executed",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/phase2Integrity.test.js",
+      "blob_sha": "414f58fd0533910a64894e83094c5c9b53f6c635",
+      "role": "test source; not executed",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/pricingValidator.test.js",
+      "blob_sha": "367ea28de1dbfb925c9585a84be954e9f62eba8e",
+      "role": "catalog/claim/service source",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/stockValidator.test.js",
+      "blob_sha": "4a0b613feb8282f6efca8e917661fb6407d2d3cb",
+      "role": "test source; not executed",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/test-api.js",
+      "blob_sha": "58755d232dc076095d9766270f91a7d03880e8fb",
+      "role": "test source; not executed",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    },
+    {
+      "path": "tests/test-db.js",
+      "blob_sha": "cfb94f8f7a044c72ccba4c23121046a1a1bf8eb4",
+      "role": "test source; not executed",
+      "read_only": true,
+      "protected": false,
+      "retrieval_status": "RETRIEVED",
+      "semantic_review": "TARGETED_STATIC_NOT_FULL_CERTIFICATION"
+    }
+  ],
+  "protected_external_reference": {
+    "path": "TAI-LIEU-KY-THUAT-IN-VAI_QuanNguyenS.pdf",
+    "present_in_tree": false,
+    "status": "OWNER_DOCUMENT_REQUIRED"
+  },
+  "excluded": "Binary images and packaged assets not decoded; no customer orders, bank data or credentials retrieved from production."
+}

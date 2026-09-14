@@ -1,0 +1,14 @@
+'use strict';
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const {validate,validTime}=require('../ai-brand-company-os/lib/schema');
+const schema=require('../ai-brand-company-os/schemas/work-order.schema.json');
+const {workOrder}=require('./fixtures');
+test('valid work order meets declared schema',()=>assert.deepEqual(validate(workOrder(),schema),[]));
+for(const value of ['2026-02-30T00:00:00Z','today','2026-09-14','2026-09-14T12:00:00+07:00']) test('strict UTC time rejects '+value,()=>assert.equal(validTime(value),false));
+test('strict UTC supports milliseconds',()=>assert.equal(validTime('2026-09-14T12:00:00.123Z'),true));
+test('unknown schema keywords fail instead of bypass',()=>assert.notEqual(validate('x',{type:'string',unsupported:true}).length,0));
+test('required and extra fields rejected',()=>assert.notEqual(validate({unexpected:1},schema).length,0));
+test('nonfinite and unsafe numbers rejected',()=>{for(const n of [NaN,Infinity,Number.MAX_SAFE_INTEGER+1])assert.notEqual(validate(n,{type:'integer'}).length,0);});
+test('duplicate dependencies rejected',()=>assert.notEqual(validate(workOrder({dependencies:['a','a']}),schema).length,0));
+test('bad source digest rejected',()=>assert.notEqual(validate(workOrder({input_refs:[{uri:'fixture',version:'v1',digest:'fake'}]}),schema).length,0));

@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # CẨM NANG TOÀN DIỆN VỀ THƯƠNG HIỆU & HỆ THỐNG TỰ ĐỘNG HÓA ĐA KÊNH
 ## THƯƠNG HIỆU QUANNGUYENS — DÒNG SẢN PHẨM 10PM PIJAMA
 > **Phiên bản:** Master Production Dossier 2026  

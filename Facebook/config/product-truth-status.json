@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "source_snapshot": "../../integrations/pijama/product-snapshot.json",
+  "publishable": false,
+  "live_inventory_verified": false,
+  "approved_claims": [],
+  "approved_offers": [],
+  "approved_rights": [],
+  "decision_inbox": "../../integrations/pijama/decision-inbox.json",
+  "note": "Observed repository fields are not verified product claims or live offers."
+}

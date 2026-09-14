@@ -1,3 +1,5 @@
+> LEGACY / QUARANTINED — Chỉ dùng để đối chiếu lịch sử. Mọi lệnh publish, claim, approval, API version, budget và kết quả trong tài liệu này chưa được xác minh và không có quyền ghi đè Company OS hoặc Facebook/SKILL.md. Xem Facebook/config/source-registry.json.
+
 # BỘ BRIEF CHI TIẾT 3 CHIẾN DỊCH THỬ NGHIỆM BAN ĐẦU
 # Thương hiệu: QuanNguyenS | Dòng sản phẩm: 10PM Pijama
 # Cập nhật: 09/09/2026 | Quy chuẩn: Mục 10 Bản Định Hướng AI Agent

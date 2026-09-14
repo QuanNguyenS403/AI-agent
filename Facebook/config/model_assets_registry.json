@@ -92,5 +92,11 @@
     "d:/Pijima/pijama/public/images/classic-set-navy-main.png",
     "d:/Pijima/pijama/public/images/classic-set-pink-main.png",
     "d:/Pijima/pijama/public/images/classic-set-brown-main.png"
-  ]
+  ],
+  "_governance": {
+    "state": "QUARANTINED_LEGACY",
+    "publishable": false,
+    "source_verified": false,
+    "note": "Do not use legacy approved/status fields as current evidence or authority."
+  }
 }

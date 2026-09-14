@@ -1,24 +1,16 @@
-# Meta Compliance and Brand Quality Policy
-quality_gates:
-  min_brand_voice_score: 0.85
-  max_duplicate_score: 0.30
-  require_single_message: true
-  require_clear_cta: true
-
-creative_gates:
-  disallow_flat_lay: true
-  disallow_plain_white_background: true
-  require_model_on_set: true
-  model_aesthetic: "Kendall Jenner / Model-Off-Duty / Quiet Luxury"
-
-meta_policy_compliance:
-  allow_third_party_copyrighted_music: false
-  respect_community_standards: true
-  ai_disclosure_required: false
-  no_clickbait: true
-  no_misleading_claims: true
-
-scheduling_rules:
-  default_posting_time: "19:30"
-  min_interval_hours: 12
-  timezone: "Asia/Ho_Chi_Minh"
+# Normative bootstrap policy. Numeric business thresholds require Owner decisions.
+version: "1.0.0"
+environment: offline
+dry_run: true
+external_publishing: false
+paid_acquisition: false
+ads_budget_vnd: 0
+capital_gate: FAIL
+unknown_evidence: DENY
+unknown_rights: DENY
+self_approval: DENY
+legacy_config: QUARANTINE
+ai_disclosure: evaluate_current_policy_per_asset
+claim_requirement: verified_scoped_current_evidence
+runtime_policy: ../../ai-brand-company-os/config/policy.json
+# Runtime reads the central JSON policy; this YAML is human-readable documentation.

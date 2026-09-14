@@ -49,5 +49,11 @@
       "Macro detail crop on body (cận cảnh đường may viền piping, thớ vải khi đang mặc trên người mẫu)",
       "Mirror selfie phong cách tự nhiên, chỉn chu"
     ]
+  },
+  "_governance": {
+    "state": "QUARANTINED_LEGACY",
+    "publishable": false,
+    "source_verified": false,
+    "note": "Do not use legacy approved/status fields as current evidence or authority."
   }
 }

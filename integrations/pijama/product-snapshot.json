@@ -1,0 +1,82 @@
+{
+  "version": "1.0.0",
+  "repository": "QuanNguyenS403/pijama",
+  "commit": "828409af7a26a2a5f4b4420789fc753588c9e1dc",
+  "source_path": "src/data/products.js",
+  "source_blob_sha": "4101f0a2b915748b21820738f397bbac3758cfd5",
+  "status": "OBSERVED_SOURCE_ONLY",
+  "publishable": false,
+  "live_inventory_verified": false,
+  "currency": "VND",
+  "products": [
+    {
+      "id": "the-classic-set",
+      "name": "THE DAYBREAK SET",
+      "price_vnd": 390000,
+      "original_price_vnd": 490000,
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "preorder": {
+        "enabled": true,
+        "lead_time_business_days": [
+          7,
+          10
+        ]
+      },
+      "initial_stock_not_live": {
+        "S": 10,
+        "M": 8
+      }
+    },
+    {
+      "id": "the-cafe-look",
+      "name": "THE STILLWATER SET",
+      "price_vnd": 550000,
+      "original_price_vnd": null,
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "preorder": {
+        "enabled": null,
+        "note": "No preorder configuration observed for this SKU; do not infer live availability."
+      },
+      "initial_stock_not_live": {
+        "M": 50,
+        "L": 50
+      }
+    },
+    {
+      "id": "the-evening-edit",
+      "name": "THE HEARTH SET",
+      "price_vnd": 750000,
+      "original_price_vnd": null,
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "preorder": {
+        "enabled": true,
+        "lead_time_business_days": [
+          7,
+          10
+        ]
+      },
+      "initial_stock_not_live": {
+        "S": 6,
+        "M": 8
+      }
+    }
+  ],
+  "excluded_fields": [
+    "customer/sample reviews",
+    "rating",
+    "certification claims",
+    "material performance claims",
+    "bank details",
+    "contact PII"
+  ],
+  "rule": "Do not publish prices/stock/lead times until approved freshness and policy requirements are satisfied."
+}

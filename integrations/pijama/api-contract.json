@@ -1,0 +1,471 @@
+{
+  "version": "1.0.0",
+  "source_commit": "828409af7a26a2a5f4b4420789fc753588c9e1dc",
+  "status": "OBSERVED_SOURCE_NOT_LIVE_API_CERTIFICATION",
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/livez",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/readyz",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/health/email",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/payment/generate-qr",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "generateQrLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/payment/webhook",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/status",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/payment/confirm",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth",
+        "submitOrderLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders/submit",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "submitOrderLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/tracking",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/lookup",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "lookupLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/orders/events",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders/sync-batch",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/orders/cancel-request",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/login",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "adminLoginLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/orders",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/orders/:orderId",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/admin/orders/:orderId",
+      "source_path": "server/index.js",
+      "source_blob_sha": "ed5cb32444b99e6a910340b5035c58fa5b1e23dc",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/config",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/phone/send-otp",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/google",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "otpRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/facebook",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "otpRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/verify",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "verifyRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/resend",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "otpRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/me",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/logout",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "verifyCsrfOrigin"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/vouchers/validate",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/my-voucher",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireCustomerAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "PATCH",
+      "path": "/api/auth/preferences",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireCustomerAuth",
+        "verifyCsrfOrigin"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/link-email",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireCustomerAuth",
+        "verifyCsrfOrigin",
+        "otpRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/link-email/verify",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireCustomerAuth",
+        "verifyCsrfOrigin",
+        "verifyRateLimiter"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/auth/unsubscribe",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "POST",
+      "path": "/api/auth/unsubscribe",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    },
+    {
+      "method": "GET",
+      "path": "/api/admin/broadcast/stats",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": false
+    },
+    {
+      "method": "POST",
+      "path": "/api/admin/broadcast",
+      "source_path": "server/lib/authEndpoints.js",
+      "source_blob_sha": "3a74e5272f8ade5a2e8d5a1dd823656feba38132",
+      "scope": "INVENTORY_ONLY_NOT_CALLED",
+      "company_agent_access": "DENIED_PENDING_EXACT_AUTHORIZATION",
+      "observed_route_middleware": [
+        "requireAdminAuth"
+      ],
+      "middleware_note": "Inline route evidence only; inspect handler and deployment for complete authentication/authorization.",
+      "potential_write": true
+    }
+  ],
+  "normalization": {
+    "order_submitted": "server accepts validated order, not cash",
+    "bank_initial_frontend": "PENDING_VERIFICATION",
+    "bank_initial_server": "AWAITING_PAYMENT",
+    "customer_claim": "CUSTOMER_CLAIMED_PAID is not settlement",
+    "paid": "Requires provider/bank evidence and reconciliation; admin toggle/default alone insufficient",
+    "refund": "No normalized finance refund feed verified",
+    "currency": "VND integer",
+    "attribution": "UNKNOWN until server-bound capture and reconciliation verified"
+  },
+  "planned_adapter": {
+    "mode": "READ_ONLY_APPROVED_EXPORT_OR_API",
+    "implemented": false,
+    "allowed_fields": [
+      "opaque_order_ref",
+      "product_id",
+      "quantity",
+      "validated_total_vnd",
+      "payment_evidence_ref",
+      "refund_evidence_ref",
+      "attribution_class",
+      "source_version"
+    ],
+    "forbidden_outputs": [
+      "customer names",
+      "email",
+      "phone",
+      "address",
+      "credentials",
+      "bank details",
+      "tracking tokens"
+    ]
+  }
+}

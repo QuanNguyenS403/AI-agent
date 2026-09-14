@@ -1,86 +1,27 @@
-# Meta Graph API Integration
+# 04 · Meta API integration contract
 
-## 1. Version hiện hành
+## Version và nguồn
 
-Tính đến **1/9/2026**, phiên bản Graph API/Marketing API mới nhất là **v26.0**, phát hành ngày **29/7/2026** (đã xác minh lại qua tài liệu changelog chính thức của Meta). Meta phát hành version mới định kỳ và khấu hao version cũ theo lịch riêng — **luôn kiểm tra lại version hiện hành trước khi triển khai thật**, vì endpoint/field có thể đổi hoặc bị deprecate giữa các version (ví dụ một số metric reach/impressions cũ đã được thay thế bằng metric mới trong các version gần đây). Không hard-code giả định version vào code production mà không có cơ chế kiểm tra định kỳ.
+Ngày kiểm tra 2026-09-14, [changelog Graph API](https://developers.facebook.com/docs/graph-api/changelog/) liệt kê v25.0. Pin ở config/runtime.json; không hard-code version trong nhiều script. Thông báo một version sắp ra không chứng minh version ấy đã available.
 
-## 2. Bảng quyền (permissions) theo mục đích
+Mỗi lần triển khai/nâng cấp cần kiểm tra docs current, support window, out-of-cycle changes và metrics permissions; cập nhật source date, contract tests và migration issue. Chưa có credential/app permission validation trong audit này.
 
-| Mục đích | Quyền cần thiết |
-|---|---|
-| Organic publishing | `pages_show_list`, `pages_read_engagement`, `pages_manage_posts` |
-| Page feed Webhooks | thêm `pages_manage_metadata` (cùng `pages_show_list`) |
-| Ads reporting | `ads_read` |
-| Ads management (tạo/sửa campaign) | `ads_management` — có thể cần Advanced Access/App Review tuỳ cách app truy cập asset |
+## Facebook và Instagram
 
-`pages_manage_posts` cho phép tạo/sửa/xoá Page posts và phụ thuộc vào các quyền Page liên quan khác ở trên.
+Facebook Page không phải personal profile. Instagram Professional có login modes/permission names và account relationships riêng. Chọn một mode theo [Instagram Platform](https://developers.facebook.com/docs/instagram-platform/) rồi lập capability matrix theo account/app/media type; không trộn token hay giả định Page token có mọi quyền IG.
 
-## 3. Endpoint chính (minh hoạ theo v26.0 — kiểm tra lại version trước khi dùng)
+[Instagram publishing](https://developers.facebook.com/docs/instagram-platform/content-publishing/) hiện mô tả 100 API posts/rolling 24 giờ; đừng dùng số cũ từ blog năm 2023 làm quota hiện tại. Đó là giới hạn nền tảng, không mục tiêu cadence. Kiểm tra live usage/limits khi triển khai.
 
-```
-base_url:              https://graph.facebook.com/v26.0
-page_feed_endpoint:    /{page_id}/feed
-reels_endpoint:        /{page_id}/video_reels
-subscribed_apps:       /{page_id}/subscribed_apps
-debug_token_endpoint:  /debug_token
-ads_insights_endpoint: /{ad_account_id}/insights
-```
+## Future transport requirements
 
-- **Page post tiêu chuẩn:** có thể lên lịch bằng cách gọi `/{page_id}/feed` với nội dung ở trạng thái chưa publish kèm `scheduled_publish_time`.
-- **Reel:** dùng Reels Publishing API riêng (`/{page_id}/video_reels`) cho Facebook Page — không dùng chung endpoint feed thông thường cho video dạng Reel.
-- **Kiểm tra token:** dùng `/debug_token` để lấy metadata của token (hạn dùng, scope, app liên kết) trước khi thực hiện bất kỳ publish nào — đây là bước health-check bắt buộc (☐ 02 trong checklist).
+Page feed/photo/Reels và Instagram media container→status→publish có lifecycle khác nhau; không dựng endpoint generic "publish mọi thứ". Native scheduling chỉ dùng cho endpoint hỗ trợ. Capability chưa test = disabled.
 
-## 4. Ví dụ gọi API (minh hoạ cấu trúc — chạy trong hệ thống production giữ token, không chạy trong phiên chat)
+Adapter chỉ gọi origin/path allowlist; không nhận absolute URL từ WO. Credential từ secret manager, tối thiểu quyền, tách dev/staging/prod; không log headers/query/raw provider payload. Giới hạn redirects/response size/timeouts. Không thử credential từ Git.
 
-Lên lịch một Page post:
+Webhook: xác thực raw bytes với signature theo sản phẩm, verify challenge đúng config, timing-safe compare, replay/dedup store, size limits và queue ACK an toàn. Không dùng event timestamp thay validation chữ ký.
 
-```bash
-curl -X POST "https://graph.facebook.com/v26.0/{page_id}/feed" \
-  -F "message=<nội_dung_caption>" \
-  -F "link=<url_nếu_có>" \
-  -F "published=false" \
-  -F "scheduled_publish_time=<unix_timestamp>" \
-  -F "access_token=<PAGE_ACCESS_TOKEN>"
-```
+401/403/OAuth invalid → stop; 429 → bounded backoff theo provider signal. Timeout mutation → reconcile, không POST lại mù. Provider ID/accepted chưa có nghĩa final publication verified. Lưu correlation/provider object và kiểm tra target/content/visibility/status.
 
-Kiểm tra token trước khi dùng:
+## Maturity
 
-```bash
-curl -G "https://graph.facebook.com/v26.0/debug_token" \
-  --data-urlencode "input_token=<PAGE_ACCESS_TOKEN>" \
-  --data-urlencode "access_token=<APP_ACCESS_TOKEN>"
-```
-
-Reconcile sau khi publish (GET để xác nhận trạng thái thật trước khi retry bất cứ điều gì):
-
-```bash
-curl -G "https://graph.facebook.com/v26.0/{post_id}" \
-  --data-urlencode "fields=id,created_time,is_published" \
-  --data-urlencode "access_token=<PAGE_ACCESS_TOKEN>"
-```
-
-## 5. Page Webhooks & reconciliation
-
-- Subscribe field `feed` trên Page Webhook để nhận thay đổi Page gần thời gian thực.
-- **Bắt buộc** xác thực chữ ký header `X-Hub-Signature-256` trước khi enqueue/xử lý bất kỳ payload webhook nào — không tin payload chưa xác thực.
-- Mọi event phải có **dedup key** (idempotency theo `event_id`) để tránh xử lý trùng khi Meta gửi lại webhook.
-- **Idempotency cho publish:** dùng khoá `content_id:scheduled_at` để đảm bảo không đăng trùng một content item hai lần dù job bị chạy lại.
-- Nếu phản hồi publish không chắc chắn (timeout, mất kết nối giữa chừng...): **GET để reconcile trạng thái thật trước, không bao giờ POST lại mù** — retry publish khi chưa biết kết quả lần trước có thể tạo bài trùng lặp trên Page.
-
-## 6. Bảo mật khi gọi API
-
-- Token, app secret, API key chỉ tồn tại trong Vault/Secret Manager; config chỉ chứa `secret_ref` (ví dụ `secret://meta/page_access_token`), không bao giờ chứa giá trị thật trong file cấu hình hay log.
-- Với các lệnh gọi Graph API server-to-server, có thể áp dụng `appsecret_proof` — một tham số được tính bằng HMAC-SHA256 trên access token dùng app secret làm khoá — để tăng cường xác thực request.
-- Meta áp dụng rate limit và trả về usage header để ứng dụng theo dõi mức sử dụng API. Khi gặp lỗi `429`/áp lực rate limit: dùng exponential backoff kèm jitter, **không gọi lặp liên tục (hammer API)**.
-- Lỗi OAuth/token invalid (ví dụ error code `190`) phải dẫn tới `STOP_PUBLISH` ngay lập tức, kích hoạt quy trình token health-check/re-auth, và cảnh báo người vận hành — không retry publish khi token đã biết là invalid.
-
-## 7. Scheduler bên ngoài
-
-Dùng **native Meta scheduling** (`scheduled_publish_time`) bất cứ khi nào endpoint/loại content hỗ trợ. Với các loại nội dung cần gọi API đúng giờ mà Meta không có lịch sẵn phù hợp, dùng một scheduler ngoài để kích hoạt agent:
-
-- **n8n** — có Schedule Trigger phù hợp cho MVP/workflow orchestration.
-- **Cloud Scheduler** (hoặc tương đương) — hỗ trợ cron và retry theo exponential backoff, phù hợp cho production.
-
-## 8. Lưu ý về giới hạn môi trường chat
-
-Trong một phiên chat với Claude, môi trường thực thi (bash tool) thường **không** có kết nối mạng tới `graph.facebook.com` theo mặc định — mọi lệnh `curl` ở trên là **mẫu tham khảo để chạy trong hệ thống production riêng** (server/n8n/Cloud Run) do người dùng vận hành và giữ token, chứ không phải để chạy trực tiếp trong phiên chat. Nếu người dùng muốn Claude thực sự thực hiện hành động publish trong phiên làm việc, cách phù hợp là dùng một connector/MCP hỗ trợ đăng bài mạng xã hội (nếu môi trường có sẵn) thay vì gọi Graph API thô — nhưng mọi gate ở mục QA/policy vẫn phải áp dụng trước khi gọi hành động publish, bất kể qua kênh nào.
+FacebookAPI là hard-deny class, không có fetch/_request thật. Đây là containment có kiểm thử, không SDK Meta hoàn chỉnh. Không gỡ throw chỉ để demo live; phải triển khai signer/WO/durable idempotency và review M2 trước.

@@ -1,92 +1,44 @@
-# Hệ Thống Vận Hành Tự Động Facebook & Instagram QuanNguyenS
+# Facebook & Instagram · governed offline department
 
-Hệ thống quản lý, sản xuất nội dung và tự động hóa xuất bản đa kênh (Omnichannel) cho:
-- **Facebook Fanpage:** `Quannguyens` (Page ID: `1213047995235499`)
-- **Instagram Business:** `@quannguyens403` (ID: `17841435718022746`)
+Bộ phận kênh organic của [Company OS](../ai-brand-company-os/SKILL.md). Publisher/AI pipeline cũ chưa đủ kiểm soát và có kết quả mô phỏng. Bản này thay các đường thực thi nguy hiểm bằng toolkit offline rõ trạng thái.
 
----
+## Chạy và kết quả mong đợi
 
-## 1. Năng Lực Tự Động Hóa Đa Nền Tảng (Facebook & Instagram)
+Dùng Node.js >=22. Từ root repo:
 
-Hệ thống hỗ trợ toàn diện các định dạng xuất bản:
-1. **Facebook Page:**
-   - Bài viết văn bản / Link (`publishPostNow`, `schedulePost`)
-   - Ảnh đơn on-set người mẫu (`publishPhotoNow`, `schedulePhoto`)
-   - Video chuẩn & Facebook Reels 9:16 (`publishVideoNow`, `scheduleVideo`)
-   - Lên lịch tự động 28 ngày trên máy chủ Meta (tắt máy vẫn tự đăng).
-2. **Instagram Business (@quannguyens403):**
-   - Đăng ảnh đơn on-set (`createInstagramMediaContainer` + `publishInstagramMedia`)
-   - Đăng Album nhiều ảnh Carousel (`createInstagramCarouselContainer`)
-   - Đăng video ngắn Instagram Reels 9:16 (`publishInstagramReel` kèm tự động render)
-   - Đọc chỉ số tương tác, lượt tiếp cận & quản lý bình luận khách hàng.
-
----
-
-## 2. Cấu Trúc Dự Án
-
-```
-d:/Facebook/
-├── .env                         # Khóa bí mật API & Token dài hạn (đã bảo mật)
-├── package.json                 # Các lệnh thực thi nhanh
-├── config/
-│   ├── brand_profile.yaml       # Định vị thương hiệu Pyjama QuanNguyenS, tone giọng, chủ đề
-│   ├── offer_catalog.json       # Danh mục sản phẩm, bảng giá và ưu đãi
-│   ├── policy.yaml              # Tiêu chuẩn kiểm duyệt nội dung & chính sách Meta
-│   └── brand.json               # Bộ quy chuẩn màu sắc, hình ảnh
-├── lib/
-│   ├── facebook-api.js          # Module giao tiếp Meta Graph API
-│   └── content-planner.js       # Kế hoạch nội dung 30 ngày (30 bài viết chuẩn SEO/Branding)
-├── scripts/
-│   ├── test_token.js            # Kiểm tra trạng thái kết nối & thời hạn Token
-│   ├── schedule_month.js        # Lệnh nạp 30 bài viết lên lịch Meta cho 30 ngày
-│   ├── check_progress.js        # Báo cáo tiến độ, năng suất và số liệu tương tác
-│   └── publish_now.js           # Đăng ngay 1 bài viết tức thì
-├── data/
-│   └── scheduled_calendar.json  # Nhật ký các bài đã lên lịch (ID bài, thời gian)
-└── reports/
-    └── report_*.json            # Các bản lưu snapshot tiến độ định kỳ
+```sh
+npm run validate
+npm test
+npm run preview
 ```
 
----
+Từ Facebook:
 
-## 3. Các Lệnh Thao Tác Nhanh
+| Lệnh | Kết quả | Network / mutation |
+|---|---|---|
+| npm run preview | SHADOW, drafts, media null, QA NOT_RUN | Không |
+| npm run sync-products | Snapshot pijama gắn commit, không live sync | Không |
+| npm run health | network_checked=false, credential_checked=false | Không |
+| npm run check-progress | Config/bootstrap status, published_count=null | Không |
+| npm run pause-publishing | Local lock active; remote_pause_confirmed=false | Không |
+| npm run post-now | BLOCKED, exit 2 | Không |
+| npm run start-publishing | BLOCKED, exit 2 | Không |
+| npm run set-token | BLOCKED, exit 2; không nhận/ghi credential | Không |
 
-Mở terminal tại thư mục `d:\Facebook` và chạy:
+update_page_info, inspect_new_token và update_new_token cũng dừng exit 2. Không đưa token vào tham số dòng lệnh. Exit 2 là từ chối có chủ đích, không lỗi cần "sửa" bằng bỏ gate.
 
-### A. Kiểm tra kết nối & Token:
-```bash
-npm run health
-```
+## File nào có hiệu lực
 
-### B. Đồng bộ dữ liệu sản phẩm mới nhất từ website:
-```bash
-npm run sync-products
-```
-*Tự động quét mã nguồn website (`src/data/products.js`), phát hiện các sản phẩm mới thêm hoặc sản phẩm bị gỡ bỏ để tự động cập nhật danh mục đăng bài.*
+[config](config/README.md) liệt kê nguồn runtime. [references](references/README.md) chứa SOP hiện hành. [lib](lib/README.md), [services](services/README.md), [scripts](scripts/README.md) nói rõ API local và giới hạn. [reports](reports/README.md) phân biệt kiểm định thật với report legacy.
 
-### C. Kích hoạt lên lịch tự động cho tháng (khi có lệnh bắt đầu):
-```bash
-npm run start-publishing
-```
-*Lệnh này sẽ nạp toàn bộ 28 bài viết chuẩn nhận diện lên máy chủ Facebook và tự động đăng mỗi tối lúc 19:30.*
+Runtime đọc company policy/state, runtime.json và snapshot có kiểm soát; không đọc legacy offer/catalog/QA report để cấp quyền. Config cũ giữ để trace mâu thuẫn nhưng registry đánh dấu QUARANTINE. Hai .skill archive chưa được kiểm định binary, không cài/nạp.
 
-### C. Tạm dừng toàn bộ đăng bài (xóa hàng đợi):
-```bash
-npm run pause-publishing
-```
-*Hủy toàn bộ các bài viết đang chờ xuất bản trên máy chủ Facebook.*
+## Mở live trong tương lai
 
-### C. Kiểm tra tiến độ & Năng suất (Sau 1 tháng hoặc bất cứ lúc nào):
-```bash
-npm run check-progress
-```
-*Hiển thị bảng báo cáo: Tổng số bài đã đăng, lượt tương tác (Like/Tim, Bình luận, Chia sẻ), và danh sách các bài đang chờ đăng.*
+Không có switch bật nhanh. Cần Owner scope, credential rotation, evidence/rights/consent, trusted signer, immutable bundle, durable queue/reservations, one controlled transport, provider reconciliation, negative tests và review code trong M1–M2. Instagram có login/permissions/media lifecycle riêng, chưa có adapter live.
 
-### D. Đăng ngay 1 bài viết tức thì:
-```bash
-npm run post-now
-```
-Hoặc đăng nội dung tùy ý:
-```bash
-node scripts/publish_now.js "Nội dung bài viết bạn muốn đăng..."
-```
+Paid luôn qua Finance G0–G6; không xem "budget đã điền" hoặc "bài đạt reach" là lý do mở Ads.
+
+## Kiểm định và bảo mật
+
+Unit tests chứng minh hành vi offline/dừng, không kiểm chứng token, Meta API, engine tạo ảnh hay deployment. Validator kiểm tra text/links/config/cú pháp, không scan Git history hoặc binary. Đọc [security](../SECURITY.md); Owner còn phải revoke/rotate credential từng commit.
